@@ -1,0 +1,85 @@
+.view-daily-sign {
+  @include font-dpr(14px);
+  >.content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("#{$img-path}assets/images/daily_sign_bg.png");
+    background-size: 100%;
+    background-color: #ffc120;
+    background-repeat: no-repeat;
+
+    >.top-banner{
+      position: relative;
+      height: 3.47rem;
+     
+      .top-left-btn{
+        position: absolute;
+        left: 0;
+        top:0.27rem;
+        height: 0.67rem;
+        width: 1.81rem;
+        @include font-dpr(14px);
+        text-align: center;
+        line-height: 0.67rem;
+        background: #fff;
+        border-top-right-radius: 0.325rem;
+        border-bottom-right-radius: 0.325rem;
+        a{
+           color:#dc3840;
+        }
+      }
+      .top-right-btn{
+        position: absolute;
+        right: 0.266667rem;
+        top:0.27rem;
+        height: 0.67rem;
+        width: 1.81rem;
+        @include font-dpr(14px);
+        text-align: center;
+        line-height: 0.67rem;
+        color: #fff;
+      }
+    }
+
+    .time-box{
+      height: 0.8rem;
+      line-height: 0.8rem;
+      display: flex;
+      width: 100%;
+      margin-top: 0.366rem;
+      .hour,.minute{
+        display: flex;
+      }
+      .hour{
+        margin-left:3.28rem;
+      }
+      .minute{
+        margin-left:0.266rem;
+      }
+      .ten,.single{
+        width:0.666667rem;
+        height: 0.8rem;
+        font-size: 0.453333rem;
+        font-weight: bold;
+        margin-right:0.133rem;
+        text-align: center;
+      }
+    }
+    .btn-submit{
+      width: 4.0rem;
+      height: 1.373333rem;
+      background-image: url("#{$img-path}assets/images/btn_qhb.png");
+      border:none;
+      background-size: 100%;
+      display: block;
+      margin:8.4rem auto auto auto;
+      line-height:1.2rem;
+      font-size:0.613333rem;
+      color:#a01212;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  
+}

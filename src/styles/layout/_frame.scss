@@ -1,0 +1,36 @@
+.modal-forbid-eve {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	z-index: 1111111;
+	.mask {
+		background: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.modal {
+		z-index: 5000;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #FFFFFF;
+		text-align: center;
+		border-radius: 3px;
+		overflow: hidden;
+		width: 6.8rem;
+		padding: 1.066667rem 0.6rem 1.066667rem 0.6rem;
+		border-radius: 0.2rem;
+		box-sizing: border-box;
+		overflow: visible;
+		position: fixed;
+		font-size: 0.426667rem;
+	}
+
+}

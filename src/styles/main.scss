@@ -1,0 +1,54 @@
+//base
+@import "base/variables";
+@import "base/mixins";
+
+//scaffolding
+@import "scaffolding/scaffolding";
+
+//common
+@import "base/common";
+
+//component
+@import "component/win";
+@import "component/activeModal";
+@import "component/button";
+@import "component/toast";
+@import "component/popupDialog";
+@import "component/loading";
+
+//layout
+@import "layout/frame";
+
+ //module
+@import "module/prizeImg";
+@import "module/award";
+
+//util
+@import "util/util";
+
+//view
+@import "view/activityCenter";
+@import "view/activityMiss";
+@import "view/activityRecord";
+@import "view/followShop";
+@import "view/home";
+@import "view/itemDetail";
+@import "view/itemExchange";
+@import "view/myPoints";
+@import "view/myPrize";
+@import "view/pointRules";
+@import "view/prizeDetail";
+@import "view/shoppingCar";
+@import "view/signPage";
+@import "view/exchangeRecord";
+@import "view/receiveCoupons";
+@import "view/deliveryRecord";
+@import "view/drawPage";
+@import "view/shoppingMall";
+@import "view/browseItem";
+@import "view/vote";
+@import "view/saveRed";
+@import "view/dailySign";
+@import "view/_perfectPersonalInfo";
+
+

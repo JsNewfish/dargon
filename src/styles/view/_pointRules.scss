@@ -1,0 +1,22 @@
+/*pointRules*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.pointRules {
+  padding: $gap-rem;
+  color: $title-color;
+  background-color: $theme-color;
+  .rule-list {
+    margin-bottom: 0.533333rem;
+    @include font-dpr(14px);
+    >h2 {
+      font-weight: bold;
+    }
+    .detail {
+      padding-left: 0.666666rem;
+    }
+  }
+}

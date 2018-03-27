@@ -1,0 +1,337 @@
+/*signPage*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$theme-color2: #eb6683;
+$title-color: #333;
+$content-color: #666;
+
+.signPage {
+  background-color: $bg-color;
+  color: $title-color;
+  .dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 6.8rem;
+    border-radius: 0.266666rem;
+    background-color: $theme-color;
+    @include font-dpr(14px);
+    z-index: 2;
+    &.act-ruler {
+      width: 8.831rem;
+    }
+    // .btn-cancel {
+    //   top: -0.8rem;
+    //   right: 0;
+    //   img {
+    //     height: 0.8rem;
+    //   }
+    // }
+    >h2 {
+      padding: 0.666666rem 0;
+      line-height: 1;
+    }
+    ul {
+      padding: 0.466666rem 0.4rem;
+      text-align: left;
+    }
+    >.btn {
+      padding: 0 0.533333rem 0.533333rem;
+      button {
+        width: calc((100% - 0.4rem)/2);
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        color: $theme-color;
+        @include font-dpr(14px);
+        line-height: 0.8rem;
+      }
+      .add-cancel,.go-shop {
+        background-color: #fe9d01;
+      }
+      .add-sure,.use-method {
+        background-color: #ff590d;
+        margin-left: 0.4rem;
+      }
+    }
+    &.prize {
+      width: 6.853333rem;
+      height: 5.253333rem;
+      background: none;
+      .btn-cancel {
+        top: -0.2rem;
+        right: 0.666666rem;
+      }
+      header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.573333rem;
+        background: url("#{$img-path}assets/images/activity/zj.png");
+        background-size: 100% 100%;
+        @include font-dpr(18px);
+        z-index: 1;
+        h2 {
+          margin-top: 0.293333rem;
+        }
+      }
+      main {
+        left: 50%;
+        top: 1.24rem;
+        transform: translateX(-50%);
+        width: 5.733333rem;
+        height: 4.2rem;
+        margin: 0 auto;
+        background-color: rgb(255, 242, 197);
+        .prize-img {
+          margin-top: 0.466666rem;
+          img {
+            display: block;
+            height: 1.12rem;
+            margin: 0 auto;
+          }
+          span {
+            color: $theme-color;
+          }
+          .top {
+            left: 2.733333rem;
+            bottom: -0.08rem;
+            @include font-dpr(19px);
+            i {
+              font-style: oblique;
+              @include font-dpr(10px);
+
+            }
+            em {
+              font-style: normal;
+              @include font-dpr(10px);
+              margin-left: -0.1rem;
+            }
+          }
+          .right {
+            top: 0;
+            left: 2.226666rem;
+            @include font-dpr(10px);
+          }
+        }
+        .prize-notice {
+          padding: 0.466666rem 0;
+          @include font-dpr(14px);
+          line-height: 1;
+        }
+        .btn {
+          padding: 0 0.533333rem 0.4rem;
+          button {
+            width: calc((100% - 0.533333rem)/2);
+            outline: none;
+            border: none;
+            border-radius: 0.133333rem;
+            color: $theme-color;
+            @include font-dpr(14px);
+            line-height: 0.8rem;
+          }
+          .go-shop {
+            background-color: #fe9d01;
+          }
+          .use-method {
+            background-color: #ff590d;
+            margin-left: 0.533333rem;
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    height: 3.466666rem;
+    background: url("#{$img-path}assets/images/activity/qdyl-bg.png") no-repeat;
+    background-size: 100% 100%;
+    .btn-sign {
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      background-color: $bg-color;
+      color: $theme-color2;
+      line-height: 2rem;
+      @include font-dpr(21px);
+      &.haveSigned {
+        color: #999;
+      }
+    }
+    .sign-days {
+      bottom: 0.8rem;
+      @include font-dpr(14px);
+      color: $theme-color;
+      span {
+        @include font-dpr(20px);
+      }
+    }
+    .continue-days {
+      left: 0.826666rem;
+    }
+    .total-days {
+      right: 0.826666rem;
+    }
+  }
+  .sign-ruler {
+    padding: 0.246666rem 0.8rem 0.246666rem;
+    background: $theme-color;
+    h2 {
+      @include font-dpr(14px);
+      font-weight: bold;
+    }
+    p {
+      @include font-dpr(13px);
+      span {
+        color: $theme-color2;
+      }
+    }
+  }
+  .date-picker {
+    margin-top: 0.2rem;
+    height: 8.28rem;
+    background: $theme-color;
+    .date-header{
+      .current-date{
+        height: 1.306667rem;
+        display: block;
+        line-height: 1.306667rem;
+        border: 1px solid #dddddd;
+        text-align: center;
+      }
+    }
+    .date-body{
+      padding: 0 0.4rem;
+      .date-title{
+        height: 0.96rem;
+        span{
+          width: 0.96rem;
+          height: 0.96rem;
+          float: left;
+          text-align: center;
+          line-height: 0.96rem;
+          margin: 0 0.173333rem;
+        }
+      }
+      .qiandao-list{
+        li{
+          width: 0.96rem;
+          height: 0.96rem;
+          float: left;
+          text-align: center;
+          line-height: 0.96rem;
+          margin: 0 0.173333rem;
+        }
+        .qiandaoone{
+          border-radius: 50%;
+          border: 2px solid #eb6683;
+        }
+        .qiandaotwo{
+          border-radius: 50%;
+          border: 2px solid #eb6683;
+          background-color: #eb6683;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .goods-list {
+    margin-top: 0.2rem;
+    overflow-x: hidden;
+    background-color: $theme-color;
+     >.title {
+        h2 {
+          line-height: 1.306666rem;
+          @include font-dpr(17px);
+        }
+        .stick {
+           width: 3.266666rem;
+           height: 2px;
+           background-color: rgb(218, 218, 218);
+           top: 50%;
+           transform: translateY(-50%);
+        }
+        .stick-left {
+           left: 0;
+           margin-left: 0.4rem;
+        }
+        .stick-right {
+           right: 0;
+           margin-right: 0.4rem;
+        }
+    }
+    >ul {
+      width: 10.16rem;
+    }
+    .goods {
+      width: 4.92rem;
+      margin: 0.2rem 0.16rem 0 0;
+      background-color: $theme-color;
+      .goods-img {
+        height: 4.933333rem;
+        background-color: pink;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .goods-name {
+        height: 1.333333rem;
+        overflow: hidden;
+        padding: 0.266666rem 0.266666rem 0;
+        text-align: justify;
+        @include font-dpr(13px);
+      }
+      .goods-detail {
+        padding: 0.1rem 0.266666rem 0.2rem;
+        .price-current {
+          color: #ff590d;
+          @include font-dpr(16px);
+          i {
+            font-style: normal;
+            @include font-dpr(10px);
+            margin-right: -0.1rem;
+          }
+        }
+        .price-cost {
+          color: #999;
+          @include font-dpr(12px);
+          text-decoration: line-through;
+        }
+      }
+    }
+
+  }
+  >.btn {
+    button {
+      width: 50%;
+      height: 1.293333rem;
+      outline: none;
+      border: none;
+      color: $theme-color;
+      @include font-dpr(17px);
+    }
+    .btn-shop {
+      background-color: #fe9d01;
+    }
+    .btn-prize {
+      background-color: #999;
+      &.active {
+        background-color: #ff590d;
+      }
+      &.prizeGeted {
+        background-color: #999;
+      }
+    }
+  }
+
+}
+.storeItem {
+  .banner {
+    background-image: url("#{$img-path}assets/images/activity/scyl-bg.png");
+  }
+}

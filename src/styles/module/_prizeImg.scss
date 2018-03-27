@@ -1,0 +1,564 @@
+.prize-img {
+  /*红包、奖券图片通用样式*/
+  position: relative;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 100% 100%;
+  >span {
+    /*通用文字描述*/
+    position: absolute;
+    color: #fff;
+    &.prize-detail-top {
+      white-space: nowrap;
+    }
+    i,em {
+      font-style: normal;
+    }
+  }
+  &.prize-battery {
+    background-image:  url("#{$img-path}assets/images/activity/battery-bg.png");    //充电宝
+  }
+  &.prize-coupon {
+    background-image:  url("#{$img-path}assets/images/activity/coupon-bg.png");    //优惠券1
+
+    &.prize-img-medium {
+      background-image:  url("#{$img-path}assets/images/middle-coupon-bg.png");
+    }
+    &.prize-img-big {
+      background-image:  url("#{$img-path}assets/images/big-coupon-bg.png");
+    }
+    &.prize-lose {
+      background-image:  url("#{$img-path}assets/images/lose-coupon-bg.png");
+    }
+  }
+  &.prize-flow {
+    background-image:  url("#{$img-path}assets/images/activity/flow-bg.png");    //流量券
+    &.prize-img-medium {
+      background-image:  url("#{$img-path}assets/images/middle-flow-bg.png");
+    }
+    &.prize-img-big {
+      background-image:  url("#{$img-path}assets/images/big-flow-bg.png");
+    }
+    &.prize-lose {
+      background-image:  url("#{$img-path}assets/images/lose-flow-bg.png");
+    }
+  }
+  &.prize-smile {
+    background-image:  url("#{$img-path}assets/images/activity/icon_smile.png");    //谢谢参与
+    background-position: center;
+    background-size: contain;
+  }
+  &.prize-red-packet {
+    background-image:  url("#{$img-path}assets/images/activity/red-packet-bg.png");    //支付宝红包
+    &.prize-img-medium{
+      background-image:  url("#{$img-path}assets/images/middle-red-package-bg.png");
+    }
+    &.prize-img-big {
+      background-image:  url("#{$img-path}assets/images/big-red-packet-bg.png");
+    }
+    &.prize-lose {
+      background-image:  url("#{$img-path}assets/images/lose-red-package-bg.png");
+    }
+  }
+  &.prize-lottery {
+    background-image:  url("#{$img-path}assets/images/activity/lottery.png");    //双色球
+    background-position: center;
+    background-size: contain;
+    &.prize-img-medium {
+      background-size: 100% 100%;
+      background-image:  url("#{$img-path}assets/images/middle-lottery-bg.png");
+    }
+    &.prize-img-big {
+      background-size: 100% 100%;
+      background-image:  url("#{$img-path}assets/images/big-lottery-bg.png");
+    }
+    &.prize-lose {
+      background-size: 100% 100%;
+      background-image:  url("#{$img-path}assets/images/lose-lottery-bg.png") !important;
+    }
+  }
+  &.prize-integral {
+    background-image:  url("#{$img-path}assets/images/activity/integral-bg.png");    //积分
+    &.prize-img-medium {
+      background-image:  url("#{$img-path}assets/images/middle-integral-bg.png");
+    }
+    &.prize-img-big {
+      background-image:  url("#{$img-path}assets/images/big-integral-bg.png");
+    }
+    &.prize-lose {
+      background-image:  url("#{$img-path}assets/images/lose-integral-bg.png");
+    }
+  }
+  &.prize-coupon2 {
+    background-image:  url("#{$img-path}assets/images/activity/coupon2-bg.png");    //优惠券2
+    &.prize-img-medium {
+      background-image:  url("#{$img-path}assets/images/middle-coupon2-bg.png");
+    }
+    &.prize-img-big {
+      background-image:  url("#{$img-path}assets/images/big-coupon2-bg.png");
+    }
+    &.prize-lose {
+      background-image:  url("#{$img-path}assets/images/lose-coupon-bg.png");
+    }
+  }
+
+
+
+  &.prize-img-less1 {
+    /*less1红包、奖券图片样式*/
+    width: 1.866667rem;
+    height: 1.12rem;   
+
+    /*less1文字描述样式*/
+    .prize-detail-top {
+      font-size: 0.373333rem;
+
+      i {
+        margin-right: -0.1rem;
+        font-size: 0.24rem;
+      }
+      em {
+        margin-left: -0.1rem;
+        font-size: 0.24rem;
+      }
+    }
+    .prize-detail-right {
+      line-height: 1.2;
+      font-size: 0.24rem;
+    }
+    .prize-detail-bottom {
+      font-size: 0.186667rem;
+    }
+
+    &.prize-coupon,&.prize-coupon2 {
+      /*less1优惠券1、2文字描述样式*/
+      .prize-detail-top {
+        left: 0.133333rem;
+        top: 0.89955vh; 
+      }
+      .prize-detail-bottom {
+        bottom: 0.04rem;
+        left: 0.066666rem;
+      }
+      .prize-detail-right {
+        width: 0.24rem;
+        right: 0.066666rem;
+        top: 0.824587vh;
+      }
+    }
+
+    &.prize-flow {
+      /*less1流量券文字描述样式*/
+      .prize-detail-top {
+        bottom: 0.89955vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .prize-detail-right {
+        left: 0.586666rem;
+        top: 1.274362vh;
+      }
+    }
+
+    &.prize-red-packet {
+      /*less1支付宝红包文字描述样式*/
+      .prize-detail-top {
+        width: 100%;
+        text-align: center;
+        top: 3.29835vh;
+        left: 0;
+      }
+      .prize-detail-right {
+        left: 0.333333rem;
+        top: 0.093333rem;
+      }
+    }
+
+    &.prize-integral {
+      /*less1积分文字描述样式*/
+      .prize-detail-top {
+        //left: 0.586667rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        top: 0.293333rem;
+      }
+    }
+  }
+
+  &.prize-img-less2 {
+    /*less2红包、奖券图片样式*/
+    width: 1.866667rem;
+    height: 1.12rem; 
+
+    /*less2文字描述样式*/
+    .prize-detail-top {
+      @include font-dpr(14px);
+      i {
+        margin-right: -0.1rem;
+        @include font-dpr(9px);
+      }
+      em {
+        margin-left: -0.1rem;
+        @include font-dpr(9px);
+      }
+    }
+    .prize-detail-right {
+      line-height: 1.05;
+      @include font-dpr(7px);
+    }
+    .prize-detail-bottom {
+      @include font-dpr(7px);
+    }
+
+
+    &.prize-coupon,&.prize-coupon2 {
+      /*less2优惠券1、2文字描述样式*/
+      .prize-detail-top {
+        left: 0.133333rem;
+        top: 0.16rem; 
+      }
+      .prize-detail-bottom {
+        bottom: 0.04rem;
+        left: 0.066666rem;
+      }
+      .prize-detail-right {
+        width: 0.24rem;
+        right: 0.066666rem;
+        top: 0.12rem;
+      }
+    }
+
+    &.prize-flow {
+      /*less2流量券文字描述样式*/
+      .prize-detail-top {
+        bottom: 0.16rem;
+        left: 0.466666rem;
+      }
+      .prize-detail-right {
+        left: 0.586666rem;
+        top: 0.226666rem;
+      }
+    }
+
+    &.prize-red-packet {
+      /*less2支付宝红包文字描述样式*/
+      .prize-detail-top {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 0.586666rem;
+      }
+      .prize-detail-right {
+        left: 0.333333rem;
+        top: 0.093333rem;
+      }
+    }
+
+    &.prize-integral {
+      /*less2积分文字描述样式*/
+      .prize-detail-top {
+        //left: 0.373333rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        top: 0.293333rem;
+      }
+    }
+  }
+
+
+  &.prize-img-little {
+    /*little红包、奖券图片样式*/
+    width: 2.933333rem;
+    height: 1.6rem;
+
+    /*little文字描述样式*/
+    .prize-detail-top {
+      font-size: 0.666667rem;
+      i {
+        font-style: normal;
+        margin-right: -0.1rem;
+        font-size: 0.32rem;
+      }
+      em {
+        font-style: normal;
+        margin-left: -0.2rem;
+        font-size: 0.32rem;
+      }
+    }
+    .prize-detail-right {
+      line-height: 1;
+      font-size: 0.266667rem;
+    }
+    .prize-detail-bottom {
+      font-size: 0.266667rem;
+    }
+
+
+    &.prize-coupon,&.prize-coupon2 {
+      /*little优惠券1、2文字描述样式*/
+      .prize-detail-top {
+        top: 0.106667rem;
+        left: 0.253333rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.08rem;
+        left: 0.253333rem;
+      }
+      .prize-detail-right {
+        right: 0.146667rem;
+        top: 0.133333rem;
+        width: 0.266666rem;
+      }
+    }
+
+    &.prize-flow {
+      /*little流量券文字描述样式*/
+      .prize-detail-top {
+        width: 100%;
+        text-align: center;
+        bottom: 0.186667rem;
+        left: 0;
+      }
+      .prize-detail-right {
+        top: 0.266667rem;
+        left: 0.84rem;
+      }
+    }
+
+    &.prize-red-packet {
+      /*little支付宝红包文字描述样式*/
+      .prize-detail-top {
+        width: 100%;
+        text-align: center;
+        bottom: 0.026667rem;
+        left: 0;
+      }
+      .prize-detail-right {
+        left: 0.88rem;
+        top: 0.16rem;
+      }
+    }
+
+    &.prize-lottery {
+      /*little双色球文字描述样式*/
+      background-image:  url("#{$img-path}assets/images/lottery-bg.png");
+      .prize-detail-top {
+        width: 3.133333rem;
+        text-align: center;
+        top: 0.533333rem;
+      }
+      .prize-detail-right {
+        left: 1.093333rem;
+        top: 0.173333rem;
+      }
+    }
+
+    &.prize-integral {
+      /*little积分文字描述样式*/
+      .prize-detail-top {
+        left: 0.6rem;
+        top: 0.36rem;
+      }
+      .prize-detail-right {
+        right: 0.466667rem;
+        top: 0.72rem;
+      }
+    }
+  }
+
+
+  &.prize-img-medium {
+    /*medium红包、奖券图片样式*/
+    width: 4.0rem;
+    height: 2.186667rem;
+
+    /*medium文字描述样式*/
+    .prize-detail-top {
+      font-size: 0.853333rem;
+      i {
+        margin-right: -0.1rem;
+        font-size: 0.4rem;
+      }
+      em {
+        margin-left: -0.2rem;
+        font-size: 0.4rem;
+      }
+    }
+    .prize-detail-bottom {
+      font-size: 0.373333rem;
+    }
+    .prize-detail-right {
+      line-height: 1.1;
+      font-size: 0.373333rem;
+    }
+
+
+    &.prize-coupon,&.prize-coupon2 {
+      /*medium优惠券1、2文字描述样式*/
+      .prize-detail-top {
+        left: 0.266666rem;
+        top: 0.146667rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.08rem;
+        left: 0.266666rem;
+      }
+      .prize-detail-right {
+        width: 0.44rem;
+        right: 0.133333rem;
+        top: 0.093333rem;
+      }
+    }
+
+    &.prize-flow {
+      /*medium流量包文字描述样式*/
+      .prize-detail-top {
+        top: 0.76rem;
+        left: 1.28rem;
+      }
+      .prize-detail-right {
+        top: 0.373333rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &.prize-red-packet {
+      /*medium支付宝红包文字描述样式*/
+      .prize-detail-top {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 0.906667rem;
+      }
+      .prize-detail-right {
+        top: 0.186667rem;
+        right: 1.04rem;
+      }
+    }
+  }
+
+
+
+  &.prize-img-big {
+    /*big红包、奖券图片样式*/
+    width: 9.2rem;
+    height: 4.0rem;
+
+    /*big文字描述样式*/
+    .prize-detail-top {
+      font-size: 1.866667rem;
+      i {
+        margin-right: -0.1rem;
+        font-size: 0.533333rem;
+      }
+      em {
+        margin-left: -0.45rem;
+        font-size: 0.533333rem;
+      }
+    }
+    .prize-detail-bottom {
+      font-size: 0.32rem;
+    }
+    .prize-detail-middle {
+      font-size: 0.666667rem;
+    }
+    .prize-detail-right {
+      line-height: 1.2;
+      font-size: 0.586667rem;
+    }
+
+
+    &.prize-coupon,&.prize-coupon2 {
+      /*big优惠券1、2文字描述样式*/
+      .prize-detail-top {
+        top: -0.213333rem;
+        left: 0.8rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.053333rem;
+        left: 0.8rem;
+      }
+      .prize-detail-middle {
+        bottom: 0.426666rem;
+        left: 0.8rem;
+      }
+      .prize-detail-right {
+        width: 0.733333rem;
+        top: 0.24rem;
+        right: 0.44rem;
+      }
+    }
+
+    &.prize-integral {
+      /*big积分文字描述样式*/
+      .prize-detail-top {
+        left: 2.2rem;
+        top: 0.56rem;
+      }
+      .prize-detail-right {
+        right: 2.333333rem;
+        top: 1.653333rem;
+      }
+      .prize-detail-bottom {
+        left: 2.2rem;
+        bottom: 0.466666rem;
+      }
+    }
+
+    &.prize-flow {
+      /*big流量券文字描述样式*/
+      .prize-detail-top {
+        left: 3.466666rem;
+        top: 0.666666rem;
+      }
+      .prize-detail-right {
+        top: 0.346666rem;
+        left: 3.226666rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.16rem;
+        left: 2.106666rem;
+      }
+    }
+
+    &.prize-lottery {
+      /*big双色球文字描述样式*/
+      .prize-detail-top {
+        bottom: -0.093333rem;
+        left: 3.893333rem;
+      }
+      .prize-detail-right {
+        left: 3.733333rem;
+        top: 0.24rem;
+      }
+      .prize-detail-bottom {
+        top: 0.906666rem;
+        left: 2.373333rem;
+      }
+    }
+
+    &.prize-red-packet {
+      /*big红包文字描述样式*/
+      .prize-detail-top {
+        left: 2.466666rem;
+        top: 1.2rem;
+      }
+      .prize-detail-right {
+        top: 0.346666rem;
+        left: 3.226666rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.16rem;
+        left: 2.106666rem;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,44 @@
+/*activityMiss*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.activityMiss {
+  overflow: hidden;
+  height: 100vh;
+  background-color: $theme-color;
+  color: $title-color;
+  .kby {
+    margin-top: 1.333333rem;
+    img {
+      width: 3.413333rem;
+    }
+  }
+  .notice {
+    margin-top: 1rem;
+    @include font-dpr(14px);
+  }
+  .btn {
+    width: 5.333333rem;
+    margin: 1.2rem auto 0 auto;
+    font-size: 0;
+    button {
+      width: 2.4rem;
+      border: none;
+      border-radius: 0.133333rem;
+      outline: none;
+      @include font-dpr(14px);
+      line-height: 0.8rem;
+      color: $theme-color;
+    }
+    .btn-shop {
+      margin-right: 0.533333rem;
+      background-color: #fe9d01;
+    }
+    .btn-act {
+      background-color: #ff590d;
+    }
+  }
+}

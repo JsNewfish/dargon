@@ -1,0 +1,1782 @@
+/* Utilities */
+.pos-r {
+  position: relative; }
+
+.pos-a {
+  position: absolute; }
+
+.pos-f {
+  position: fixed; }
+
+.w-100 {
+  width: 100px; }
+
+.m-t-10 {
+  margin-top: 10px; }
+
+.m-b-10 {
+  margin-bottom: 10px; }
+
+.cursor-hand {
+  cursor: pointer !important; }
+
+.cursor-arrow {
+  cursor: default !important; }
+
+.link {
+  cursor: pointer; }
+  .link:hover, .link:focus {
+    text-decoration: underline; }
+
+.no-decoration {
+  text-decoration: none; }
+  .no-decoration:hover {
+    text-decoration: none; }
+  .no-decoration:focus {
+    text-decoration: underline; }
+
+.text-center {
+  text-align: center; }
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.no-transition {
+  transition: none; }
+
+.no-shadow {
+  box-shadow: none; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.h-block .h-title {
+  height: 1.333333rem;
+  background-color: #5C4329;
+  color: #fff;
+  line-height: 1.333333rem;
+  position: relative; }
+  .h-block .h-title .h-text {
+    font-size: 20px; }
+    [data-dpr="2"] .h-block .h-title .h-text {
+      font-size: 40px; }
+    [data-dpr="3"] .h-block .h-title .h-text {
+      font-size: 60px; }
+  .h-block .h-title .h-entry {
+    position: absolute;
+    right: 0.4rem;
+    line-height: normal;
+    top: 50%;
+    transform: translateY(-50%); }
+    .h-block .h-title .h-entry img {
+      height: 0.56rem; }
+    .h-block .h-title .h-entry .h-entry-text {
+      display: block; }
+.h-block .h-banner {
+  height: 2.6rem;
+  background-image: url(../images/banner-bg@2x.png);
+  overflow: hidden; }
+  .h-block .h-banner .h-userInfo {
+    height: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 1.413333rem;
+    padding: 0 0.4rem; }
+    .h-block .h-banner .h-userInfo .buyerNick {
+      line-height: 1.2rem;
+      float: left;
+      color: #fff; }
+      .h-block .h-banner .h-userInfo .buyerNick .buyerNick-img {
+        background-image: url(../images/cj@2x.png);
+        width: 0.933333rem;
+        height: 0.933333rem;
+        background-size: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+    .h-block .h-banner .h-userInfo .points {
+      width: 2.84rem;
+      float: right;
+      color: #000;
+      height: 0.8rem;
+      background-color: #FCB904;
+      border-radius: 0.4rem;
+      margin-top: 0.2rem;
+      line-height: 0.8rem;
+      padding-left: 0.266667rem; }
+      .h-block .h-banner .h-userInfo .points img {
+        vertical-align: middle; }
+.h-block .h-btnGroup {
+  height: 1.066667rem;
+  background-color: #FF5101; }
+  .h-block .h-btnGroup .link {
+    width: 49%;
+    display: inline-block;
+    border-left: 1px solid #fff;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.066667rem; }
+    [data-dpr="2"] .h-block .h-btnGroup .link {
+      font-size: 34px; }
+    [data-dpr="3"] .h-block .h-btnGroup .link {
+      font-size: 51px; }
+    .h-block .h-btnGroup .link img {
+      vertical-align: middle; }
+
+.title-bar {
+  height: 1.333333rem;
+  text-align: center;
+  position: relative; }
+  .title-bar .title-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.093333rem;
+    color: #fff;
+    font-size: 17px; }
+    [data-dpr="2"] .title-bar .title-text {
+      font-size: 34px; }
+    [data-dpr="3"] .title-bar .title-text {
+      font-size: 51px; }
+
+.act-center {
+  background-color: #fff;
+  left: 0;
+  color: #f34d4d;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+  top: 0.333333rem;
+  font-size: 14px;
+  line-height: 0.7rem;
+  z-index: 1; }
+  [data-dpr="2"] .act-center {
+    font-size: 28px; }
+  [data-dpr="3"] .act-center {
+    font-size: 42px; }
+
+.act-rules {
+  right: 0;
+  padding-right: 0.2rem;
+  color: #fff;
+  top: 0.333333rem;
+  font-size: 14px;
+  line-height: 0.7rem;
+  z-index: 1; }
+  [data-dpr="2"] .act-rules {
+    font-size: 28px; }
+  [data-dpr="3"] .act-rules {
+    font-size: 42px; }
+
+.point-rules {
+  background-color: #ff9000;
+  right: 0;
+  color: #fff;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0.35rem 0 0 0.35rem;
+  top: 0.333333rem;
+  font-size: 14px;
+  line-height: 0.7rem;
+  z-index: 1; }
+  [data-dpr="2"] .point-rules {
+    font-size: 28px; }
+  [data-dpr="3"] .point-rules {
+    font-size: 42px; }
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(153, 153, 153, 0.9);
+  z-index: 1; }
+
+.toast {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.253333rem;
+  height: 1.066666rem;
+  border-radius: 0.053333rem;
+  color: #fff;
+  line-height: 1.066666rem;
+  font-size: 14px;
+  background-color: #808080;
+  z-index: 1; }
+  [data-dpr="2"] .toast {
+    font-size: 28px; }
+  [data-dpr="3"] .toast {
+    font-size: 42px; }
+
+/*myPrize*/
+.myPrize {
+  font-family: PingFang-SC-Medium;
+  color: #333;
+  background-color: #eee; }
+  .myPrize .cover {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(153, 153, 153, 0.4);
+    z-index: 1; }
+  .myPrize nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    height: 1.066666rem;
+    font-size: 14px;
+    padding: 0.346666rem 0;
+    background-color: #fff; }
+    [data-dpr="2"] .myPrize nav {
+      font-size: 28px; }
+    [data-dpr="3"] .myPrize nav {
+      font-size: 42px; }
+    .myPrize nav .pull-left {
+      box-sizing: border-box;
+      width: 3.32rem;
+      border-right: 1px solid #999;
+      line-height: 1; }
+      .myPrize nav .pull-left > img {
+        vertical-align: middle;
+        width: 0.32rem;
+        height: 0.32rem; }
+      .myPrize nav .pull-left > .nav-list {
+        box-sizing: border-box;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        border-top: 1px solid #999;
+        padding: 0 0.4rem;
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.173333rem;
+        background-color: #fff; }
+        [data-dpr="2"] .myPrize nav .pull-left > .nav-list {
+          font-size: 24px; }
+        [data-dpr="3"] .myPrize nav .pull-left > .nav-list {
+          font-size: 36px; }
+        .myPrize nav .pull-left > .nav-list li {
+          position: relative;
+          box-sizing: border-box;
+          padding-left: 0.333333rem;
+          border-bottom: 1px solid #999; }
+          .myPrize nav .pull-left > .nav-list li img {
+            position: absolute;
+            display: none;
+            width: 0.32rem;
+            height: 0.32rem;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%); }
+          .myPrize nav .pull-left > .nav-list li.active > img {
+            display: block; }
+        .myPrize nav .pull-left > .nav-list li:last-child {
+          border: none; }
+      .myPrize nav .pull-left .active {
+        color: #ff590d; }
+    .myPrize nav > :last-child {
+      border: none; }
+  .myPrize main {
+    margin-top: 1.066666rem;
+    padding: 1px 0.4rem 0 0.4rem; }
+    .myPrize main ul > li {
+      margin-top: 0.2rem;
+      background-color: #fff;
+      border-radius: 0.2rem;
+      height: 2.026666rem; }
+      .myPrize main ul > li .prize-img {
+        position: relative;
+        width: 3.333333rem;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0.2rem 0 0.2rem 0.4rem;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-size: 100% 100%; }
+        .myPrize main ul > li .prize-img span {
+          position: absolute;
+          color: #fff; }
+        .myPrize main ul > li .prize-img .prize-detail-top {
+          font-size: 16px; }
+          [data-dpr="2"] .myPrize main ul > li .prize-img .prize-detail-top {
+            font-size: 32px; }
+          [data-dpr="3"] .myPrize main ul > li .prize-img .prize-detail-top {
+            font-size: 48px; }
+          .myPrize main ul > li .prize-img .prize-detail-top i {
+            font-style: normal;
+            margin-right: -0.1rem;
+            font-size: 9px; }
+            [data-dpr="2"] .myPrize main ul > li .prize-img .prize-detail-top i {
+              font-size: 18px; }
+            [data-dpr="3"] .myPrize main ul > li .prize-img .prize-detail-top i {
+              font-size: 27px; }
+          .myPrize main ul > li .prize-img .prize-detail-top em {
+            font-style: normal;
+            margin-left: -0.1rem;
+            font-size: 9px; }
+            [data-dpr="2"] .myPrize main ul > li .prize-img .prize-detail-top em {
+              font-size: 18px; }
+            [data-dpr="3"] .myPrize main ul > li .prize-img .prize-detail-top em {
+              font-size: 27px; }
+        .myPrize main ul > li .prize-img .prize-detail-right {
+          line-height: 1.2;
+          font-size: 9px; }
+          [data-dpr="2"] .myPrize main ul > li .prize-img .prize-detail-right {
+            font-size: 18px; }
+          [data-dpr="3"] .myPrize main ul > li .prize-img .prize-detail-right {
+            font-size: 27px; }
+        .myPrize main ul > li .prize-img .prize-detail-bottom {
+          font-size: 9px; }
+          [data-dpr="2"] .myPrize main ul > li .prize-img .prize-detail-bottom {
+            font-size: 18px; }
+          [data-dpr="3"] .myPrize main ul > li .prize-img .prize-detail-bottom {
+            font-size: 27px; }
+      .myPrize main ul > li .prize-desc {
+        margin-left: 0.533333rem;
+        line-height: 1; }
+        .myPrize main ul > li .prize-desc h2 {
+          font-size: 14px;
+          margin: 0.533333rem 0 0.266666rem 0; }
+          [data-dpr="2"] .myPrize main ul > li .prize-desc h2 {
+            font-size: 28px; }
+          [data-dpr="3"] .myPrize main ul > li .prize-desc h2 {
+            font-size: 42px; }
+        .myPrize main ul > li .prize-desc p {
+          font-size: 12px;
+          color: #999; }
+          [data-dpr="2"] .myPrize main ul > li .prize-desc p {
+            font-size: 24px; }
+          [data-dpr="3"] .myPrize main ul > li .prize-desc p {
+            font-size: 36px; }
+    .myPrize main ul li.prize-coupon .prize-img {
+      background-image: url("../images/activity/coupon-bg.png"); }
+      .myPrize main ul li.prize-coupon .prize-img .prize-detail-top {
+        top: 0.4rem;
+        left: 0.92rem; }
+      .myPrize main ul li.prize-coupon .prize-img .prize-detail-bottom {
+        top: 1.373333rem;
+        left: 0.72rem; }
+      .myPrize main ul li.prize-coupon .prize-img .prize-detail-right {
+        left: 2.906666rem;
+        top: 0.32rem;
+        width: 0.266666rem; }
+    .myPrize main ul li.prize-coupon.prize-lose .prize-img {
+      background-image: url("../images/lose-coupon-bg.png"); }
+    .myPrize main ul li.prize-coupon2 .prize-img {
+      background-image: url("../images/activity/coupon2-bg.png"); }
+      .myPrize main ul li.prize-coupon2 .prize-img .prize-detail-top {
+        top: 0.4rem;
+        left: 0.92rem; }
+      .myPrize main ul li.prize-coupon2 .prize-img .prize-detail-bottom {
+        top: 1.373333rem;
+        left: 0.72rem; }
+      .myPrize main ul li.prize-coupon2 .prize-img .prize-detail-right {
+        left: 2.906666rem;
+        top: 0.32rem;
+        width: 0.266666rem; }
+    .myPrize main ul li.prize-coupon2.prize-lose .prize-img {
+      background-image: url("../images/lose-coupon-bg.png"); }
+    .myPrize main ul li.prize-flow .prize-img {
+      background-image: url("../images/flow-bg.png"); }
+      .myPrize main ul li.prize-flow .prize-img .prize-detail-top {
+        left: 1.426666rem;
+        top: 0.826666rem; }
+      .myPrize main ul li.prize-flow .prize-img .prize-detail-right {
+        left: 1.253333rem;
+        top: 0.48rem; }
+    .myPrize main ul li.prize-flow.prize-lose .prize-img {
+      background-image: url("../images/lose-flow-bg.png"); }
+    .myPrize main ul li.prize-lottery .prize-img {
+      background-image: url("../images/lottery-bg.png"); }
+      .myPrize main ul li.prize-lottery .prize-img .prize-detail-top {
+        left: 1.613333rem;
+        top: 0.826666rem; }
+      .myPrize main ul li.prize-lottery .prize-img .prize-detail-right {
+        left: 1.493333rem;
+        top: 0.386666rem; }
+    .myPrize main ul li.prize-lottery.prize-lose .prize-img {
+      background-image: url("../images/lose-lottery-bg.png"); }
+    .myPrize main ul li.prize-integral .prize-img {
+      background-image: url("../images/integral-bg.png"); }
+      .myPrize main ul li.prize-integral .prize-img .prize-detail-top {
+        left: 1.613333rem;
+        top: 0.826666rem; }
+      .myPrize main ul li.prize-integral .prize-img .prize-detail-right {
+        left: 1.493333rem;
+        top: 0.386666rem; }
+    .myPrize main ul li.prize-integral.prize-lose .prize-img {
+      background-image: url("../images/lose-integral-bg.png"); }
+    .myPrize main ul li.prize-red-pakage .prize-img {
+      background-image: url("../images/red-packet-bg.png"); }
+      .myPrize main ul li.prize-red-pakage .prize-img .prize-detail-top {
+        left: 1.613333rem;
+        top: 0.826666rem; }
+      .myPrize main ul li.prize-red-pakage .prize-img .prize-detail-right {
+        left: 1.493333rem;
+        top: 0.386666rem; }
+    .myPrize main ul li.prize-red-pakage.prize-lose .prize-img {
+      background-image: url("../images/lose-red-package-bg.png"); }
+    .myPrize main ul li.prize-lose .prize-desc {
+      color: #999; }
+
+/*myPoints*/
+.myPoints {
+  background-color: #eee;
+  color: #333; }
+  .myPoints .banner {
+    height: 4rem;
+    background: url("../images/integral-banner-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff; }
+    .myPoints .banner .point-num {
+      padding-top: 1.4rem;
+      font-size: 40px;
+      line-height: 1; }
+      [data-dpr="2"] .myPoints .banner .point-num {
+        font-size: 80px; }
+      [data-dpr="3"] .myPoints .banner .point-num {
+        font-size: 120px; }
+    .myPoints .banner .title {
+      line-height: 1;
+      padding-top: 0.666666rem;
+      font-size: 12px; }
+      [data-dpr="2"] .myPoints .banner .title {
+        font-size: 24px; }
+      [data-dpr="3"] .myPoints .banner .title {
+        font-size: 36px; }
+      .myPoints .banner .title .stick {
+        width: 1.333333rem;
+        border-bottom: 2px dashed #fff;
+        bottom: 0.146666rem; }
+      .myPoints .banner .title .stick-left {
+        left: 2.586666rem; }
+      .myPoints .banner .title .stick-right {
+        right: 2.586666rem; }
+    .myPoints .banner .btn-sign {
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: #eee;
+      color: #eb6683;
+      line-height: 2rem;
+      font-size: 21px; }
+      [data-dpr="2"] .myPoints .banner .btn-sign {
+        font-size: 42px; }
+      [data-dpr="3"] .myPoints .banner .btn-sign {
+        font-size: 63px; }
+      .myPoints .banner .btn-sign.haveSigned {
+        color: #999; }
+    .myPoints .banner .sign-days {
+      bottom: 0.8rem;
+      font-size: 14px;
+      color: #fff; }
+      [data-dpr="2"] .myPoints .banner .sign-days {
+        font-size: 28px; }
+      [data-dpr="3"] .myPoints .banner .sign-days {
+        font-size: 42px; }
+      .myPoints .banner .sign-days span {
+        font-size: 20px; }
+        [data-dpr="2"] .myPoints .banner .sign-days span {
+          font-size: 40px; }
+        [data-dpr="3"] .myPoints .banner .sign-days span {
+          font-size: 60px; }
+    .myPoints .banner .continue-days {
+      left: 0.826666rem; }
+    .myPoints .banner .total-days {
+      right: 0.826666rem; }
+  .myPoints nav {
+    box-sizing: border-box;
+    height: 1.2rem;
+    font-size: 15px;
+    padding: 0.4rem 0;
+    background-color: #fff; }
+    [data-dpr="2"] .myPoints nav {
+      font-size: 30px; }
+    [data-dpr="3"] .myPoints nav {
+      font-size: 45px; }
+    .myPoints nav .pull-left {
+      box-sizing: border-box;
+      width: 33.333333%;
+      border-right: 1px solid #999;
+      line-height: 1; }
+    .myPoints nav > :last-child {
+      border: none; }
+  .myPoints .point-detail {
+    margin-top: 0.266666rem;
+    background-color: #fff; }
+    .myPoints .point-detail .title {
+      border-bottom: 1px solid #eee;
+      line-height: 1.2rem;
+      font-size: 15px;
+      font-weight: bold; }
+      [data-dpr="2"] .myPoints .point-detail .title {
+        font-size: 30px; }
+      [data-dpr="3"] .myPoints .point-detail .title {
+        font-size: 45px; }
+    .myPoints .point-detail .list {
+      box-sizing: border-box;
+      height: 1.666666rem;
+      padding: 0.4rem 0.8rem;
+      border-bottom: 1px solid #eee; }
+      .myPoints .point-detail .list .name {
+        line-height: 1;
+        font-size: 14px; }
+        [data-dpr="2"] .myPoints .point-detail .list .name {
+          font-size: 28px; }
+        [data-dpr="3"] .myPoints .point-detail .list .name {
+          font-size: 42px; }
+      .myPoints .point-detail .list .date {
+        margin-top: 0.2rem;
+        line-height: 1;
+        font-size: 12px;
+        color: #999; }
+        [data-dpr="2"] .myPoints .point-detail .list .date {
+          font-size: 24px; }
+        [data-dpr="3"] .myPoints .point-detail .list .date {
+          font-size: 36px; }
+      .myPoints .point-detail .list .point {
+        line-height: 0.853333rem;
+        color: #12ca1f;
+        font-size: 15px; }
+        [data-dpr="2"] .myPoints .point-detail .list .point {
+          font-size: 30px; }
+        [data-dpr="3"] .myPoints .point-detail .list .point {
+          font-size: 45px; }
+        .myPoints .point-detail .list .point.add {
+          color: #f34d4d; }
+
+/*pointRules*/
+.pointRules {
+  padding: 0.4rem;
+  color: #333;
+  background-color: #fff; }
+  .pointRules .rule-list {
+    margin-bottom: 0.533333rem;
+    font-size: 14px; }
+    [data-dpr="2"] .pointRules .rule-list {
+      font-size: 28px; }
+    [data-dpr="3"] .pointRules .rule-list {
+      font-size: 42px; }
+    .pointRules .rule-list > h2 {
+      font-weight: bold; }
+    .pointRules .rule-list .detail {
+      padding-left: 0.666666rem; }
+
+/*itemExchange*/
+.itemExchange {
+  height: 100vh;
+  overflow: auto;
+  color: #333;
+  background-color: #eee;
+  font-size: 14px;
+  line-height: 1.186666rem; }
+  [data-dpr="2"] .itemExchange {
+    font-size: 28px; }
+  [data-dpr="3"] .itemExchange {
+    font-size: 42px; }
+  .itemExchange .deliveryInfo li {
+    padding: 0 0.4rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff; }
+    .itemExchange .deliveryInfo li span {
+      display: inline-block;
+      width: 150px; }
+    .itemExchange .deliveryInfo li input {
+      border: none;
+      background-color: transparent; }
+    .itemExchange .deliveryInfo li textarea {
+      width: 100%;
+      height: 2rem;
+      border: none;
+      resize: none;
+      font-size: 14px;
+      line-height: 0.7rem;
+      background-color: transparent; }
+      [data-dpr="2"] .itemExchange .deliveryInfo li textarea {
+        font-size: 28px; }
+      [data-dpr="3"] .itemExchange .deliveryInfo li textarea {
+        font-size: 42px; }
+    .itemExchange .deliveryInfo li .select {
+      padding-right: 0.4rem;
+      color: #999999; }
+      .itemExchange .deliveryInfo li .select img {
+        width: 0.32rem;
+        right: 0;
+        top: 0.466666rem; }
+  .itemExchange .deliveryInfo li:last-child {
+    border: none; }
+  .itemExchange .deliveryInfo button {
+    display: block;
+    width: 100%;
+    margin-top: 0.533333rem;
+    border: none;
+    line-height: 1.16rem;
+    font-size: 20px;
+    color: #fff;
+    background: #ff4600; }
+    [data-dpr="2"] .itemExchange .deliveryInfo button {
+      font-size: 40px; }
+    [data-dpr="3"] .itemExchange .deliveryInfo button {
+      font-size: 60px; }
+
+/*deliveryRecord*/
+.deliveryRecord {
+  height: 100vh;
+  overflow: auto;
+  color: #333;
+  background-color: #eee;
+  font-size: 14px;
+  line-height: 0.7rem; }
+  [data-dpr="2"] .deliveryRecord {
+    font-size: 28px; }
+  [data-dpr="3"] .deliveryRecord {
+    font-size: 42px; }
+  .deliveryRecord .stick {
+    width: 0.05rem;
+    position: relative;
+    top: 0.173333rem;
+    margin-right: 0.2rem;
+    height: 0.373333rem;
+    background-color: #ff590d; }
+  .deliveryRecord .notice {
+    padding: 0.23rem 0.4rem;
+    background-color: #fff; }
+  .deliveryRecord .detail {
+    margin-top: 0.2rem;
+    padding: 0.23rem 0.4rem;
+    background-color: #fff; }
+    .deliveryRecord .detail .status > span {
+      color: #666; }
+    .deliveryRecord .detail .deliveryInfo {
+      margin-top: 0.23rem; }
+      .deliveryRecord .detail .deliveryInfo > span {
+        color: #666; }
+      .deliveryRecord .detail .deliveryInfo .left {
+        width: 2.16rem;
+        text-align: right;
+        color: #666; }
+      .deliveryRecord .detail .deliveryInfo .right {
+        padding-left: 0.15rem; }
+
+/*activityRecord*/
+.activityRecord {
+  background-color: #fff;
+  color: #333; }
+  .activityRecord .list {
+    box-sizing: border-box;
+    height: 1.8rem;
+    padding: 0.4rem;
+    border-bottom: 1px solid #eee; }
+    .activityRecord .list .name {
+      line-height: 1;
+      font-size: 14px; }
+      [data-dpr="2"] .activityRecord .list .name {
+        font-size: 28px; }
+      [data-dpr="3"] .activityRecord .list .name {
+        font-size: 42px; }
+    .activityRecord .list .date {
+      margin-top: 0.3rem;
+      line-height: 1;
+      font-size: 12px;
+      color: #999; }
+      [data-dpr="2"] .activityRecord .list .date {
+        font-size: 24px; }
+      [data-dpr="3"] .activityRecord .list .date {
+        font-size: 36px; }
+    .activityRecord .list .point {
+      line-height: 0.853333rem;
+      font-size: 15px; }
+      [data-dpr="2"] .activityRecord .list .point {
+        font-size: 30px; }
+      [data-dpr="3"] .activityRecord .list .point {
+        font-size: 45px; }
+
+/*itemDetail*/
+.itemDetail {
+  background-color: #fff; }
+  .itemDetail main {
+    height: calc(100vh - 1.6rem); }
+    .itemDetail main .item-img {
+      padding: 0.266666rem 0 0.266666rem 0; }
+      .itemDetail main .item-img img {
+        width: 4rem;
+        height: 4rem; }
+    .itemDetail main .item-bg {
+      height: 0.4rem;
+      background-color: #eee; }
+    .itemDetail main .item-detail {
+      padding: 0.4rem;
+      background: #fff; }
+      .itemDetail main .item-detail .title {
+        color: #333;
+        font-weight: bold; }
+      .itemDetail main .item-detail p {
+        color: #666;
+        line-height: 2; }
+  .itemDetail footer {
+    height: 1.6rem; }
+    .itemDetail footer p {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0.2rem 0 0.2rem 0;
+      line-height: 1.2rem;
+      color: #333;
+      font-size: 20px;
+      box-shadow: 0 0 20px 0 #ccc; }
+      [data-dpr="2"] .itemDetail footer p {
+        font-size: 40px; }
+      [data-dpr="3"] .itemDetail footer p {
+        font-size: 60px; }
+      .itemDetail footer p span {
+        margin-left: 1.7em;
+        color: #f34d4d; }
+    .itemDetail footer img {
+      display: block;
+      width: 2.266666rem;
+      height: 0.933333rem;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%); }
+
+/*myPoints*/
+.myPoints main {
+  padding: 0.4rem;
+  background-color: #eee; }
+  .myPoints main .prize-img {
+    box-sizing: border-box;
+    height: 4rem;
+    color: #fff;
+    padding: 1rem 0 1rem 0;
+    background: url("../images/middle-integral-bg.png") no-repeat;
+    background-size: 100% 100%; }
+    .myPoints main .prize-img .point {
+      height: 2rem;
+      font-size: 20px;
+      line-height: 2rem; }
+      [data-dpr="2"] .myPoints main .prize-img .point {
+        font-size: 40px; }
+      [data-dpr="3"] .myPoints main .prize-img .point {
+        font-size: 60px; }
+      .myPoints main .prize-img .point span {
+        font-size: 60px;
+        vertical-align: middle;
+        margin-right: -0.2rem;
+        font-weight: bold; }
+        [data-dpr="2"] .myPoints main .prize-img .point span {
+          font-size: 120px; }
+        [data-dpr="3"] .myPoints main .prize-img .point span {
+          font-size: 180px; }
+    .myPoints main .prize-img .effective-date {
+      width: 100%;
+      transform: translateX(-50%);
+      left: 50%; }
+  .myPoints main .prize-detail {
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    background: #fff; }
+    .myPoints main .prize-detail .title {
+      color: #333;
+      font-weight: bold; }
+    .myPoints main .prize-detail p {
+      color: #666;
+      line-height: 2; }
+  .myPoints main > :nth-child(3) {
+    padding-top: 0.346666rem;
+    padding-bottom: 0.346666rem; }
+  .myPoints main > :nth-child(6) {
+    padding-top: 0.266666rem;
+    padding-bottom: 0.266666rem; }
+    .myPoints main > :nth-child(6) .store-logo {
+      height: 1.2rem;
+      margin-right: 0.533333rem; }
+    .myPoints main > :nth-child(6) p {
+      height: 1.2rem;
+      box-sizing: border-box;
+      padding: 0.1rem 0 0.1rem 0;
+      line-height: 1rem;
+      color: #333;
+      font-size: 17px; }
+      [data-dpr="2"] .myPoints main > :nth-child(6) p {
+        font-size: 34px; }
+      [data-dpr="3"] .myPoints main > :nth-child(6) p {
+        font-size: 51px; }
+    .myPoints main > :nth-child(6) .img-right {
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%); }
+  .myPoints main hr {
+    margin-bottom: -0.4rem; }
+.myPoints footer p {
+  height: 1.333333rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0 0.2rem 0;
+  background: #ff4600;
+  line-height: 0.933333rem;
+  color: #fff;
+  font-size: 20px; }
+  [data-dpr="2"] .myPoints footer p {
+    font-size: 40px; }
+  [data-dpr="3"] .myPoints footer p {
+    font-size: 60px; }
+
+/*activityCenter*/
+.activityCenter {
+  overflow: hidden;
+  height: 100vh;
+  background: url("../images/activity/bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: #333; }
+  .activityCenter .act-center {
+    background-color: #fff;
+    left: 0;
+    color: #f34d4d;
+    padding: 0 0.2rem 0 0.2rem;
+    border-radius: 0 0.35rem 0.35rem 0;
+    top: 0.333333rem;
+    font-size: 14px;
+    line-height: 0.7rem; }
+    [data-dpr="2"] .activityCenter .act-center {
+      font-size: 28px; }
+    [data-dpr="3"] .activityCenter .act-center {
+      font-size: 42px; }
+  .activityCenter .act-rules {
+    right: 0;
+    padding-right: 0.2rem;
+    color: #fff;
+    top: 0.333333rem;
+    font-size: 14px;
+    line-height: 0.7rem; }
+    [data-dpr="2"] .activityCenter .act-rules {
+      font-size: 28px; }
+    [data-dpr="3"] .activityCenter .act-rules {
+      font-size: 42px; }
+  .activityCenter .act-chance {
+    width: 4.4rem;
+    height: 0.666666rem;
+    border-radius: 0.333333rem;
+    margin: 4.66667rem auto 0.4rem auto;
+    background-color: #8a68f7; }
+    .activityCenter .act-chance p {
+      margin-left: 1.5rem;
+      line-height: 0.666666rem;
+      color: #fff;
+      font-size: 14px; }
+      [data-dpr="2"] .activityCenter .act-chance p {
+        font-size: 28px; }
+      [data-dpr="3"] .activityCenter .act-chance p {
+        font-size: 42px; }
+      .activityCenter .act-chance p span {
+        vertical-align: top;
+        color: #ffe400;
+        font-size: 25px; }
+        [data-dpr="2"] .activityCenter .act-chance p span {
+          font-size: 50px; }
+        [data-dpr="3"] .activityCenter .act-chance p span {
+          font-size: 75px; }
+    .activityCenter .act-chance img {
+      left: 0.4rem;
+      top: -0.16rem;
+      width: 0.8rem;
+      height: 0.8rem; }
+  .activityCenter .act-panel {
+    box-sizing: border-box;
+    width: 9.2rem;
+    height: calc(100% - 10.6rem);
+    margin: 0 auto;
+    padding: 0.4rem;
+    background: url("../images/activity/bg2.png") no-repeat;
+    background-size: 100% 100%; }
+    .activityCenter .act-panel ul {
+      height: 100%; }
+      .activityCenter .act-panel ul li {
+        width: calc((100% - 0.4rem)/3);
+        height: calc((100% - 0.4rem)/3);
+        margin: 0.1rem 0 0 0.1rem;
+        background: url("../images/activity/bg3.png") no-repeat;
+        background-size: 100% 100%; }
+        .activityCenter .act-panel ul li .prize-img {
+          position: relative;
+          box-sizing: border-box;
+          height: calc(100% - 0.7rem);
+          padding: 0.3rem 0.4rem 0 0.4rem;
+          background-repeat: no-repeat;
+          background-origin: content-box;
+          background-size: 100% 100%; }
+          .activityCenter .act-panel ul li .prize-img span {
+            position: absolute;
+            color: #fff; }
+          .activityCenter .act-panel ul li .prize-img .prize-detail-top {
+            font-size: 12px; }
+            [data-dpr="2"] .activityCenter .act-panel ul li .prize-img .prize-detail-top {
+              font-size: 24px; }
+            [data-dpr="3"] .activityCenter .act-panel ul li .prize-img .prize-detail-top {
+              font-size: 36px; }
+            .activityCenter .act-panel ul li .prize-img .prize-detail-top i {
+              font-style: normal;
+              margin-right: -0.1rem;
+              font-size: 7px; }
+              [data-dpr="2"] .activityCenter .act-panel ul li .prize-img .prize-detail-top i {
+                font-size: 14px; }
+              [data-dpr="3"] .activityCenter .act-panel ul li .prize-img .prize-detail-top i {
+                font-size: 21px; }
+            .activityCenter .act-panel ul li .prize-img .prize-detail-top em {
+              font-style: normal;
+              margin-left: -0.1rem;
+              font-size: 7px; }
+              [data-dpr="2"] .activityCenter .act-panel ul li .prize-img .prize-detail-top em {
+                font-size: 14px; }
+              [data-dpr="3"] .activityCenter .act-panel ul li .prize-img .prize-detail-top em {
+                font-size: 21px; }
+          .activityCenter .act-panel ul li .prize-img .prize-detail-right {
+            line-height: 1.2;
+            font-size: 8px; }
+            [data-dpr="2"] .activityCenter .act-panel ul li .prize-img .prize-detail-right {
+              font-size: 16px; }
+            [data-dpr="3"] .activityCenter .act-panel ul li .prize-img .prize-detail-right {
+              font-size: 24px; }
+          .activityCenter .act-panel ul li .prize-img .prize-detail-bottom {
+            font-size: 7px; }
+            [data-dpr="2"] .activityCenter .act-panel ul li .prize-img .prize-detail-bottom {
+              font-size: 14px; }
+            [data-dpr="3"] .activityCenter .act-panel ul li .prize-img .prize-detail-bottom {
+              font-size: 21px; }
+        .activityCenter .act-panel ul li .prize-title {
+          line-height: 0.7rem;
+          font-size: 11px;
+          text-align: center; }
+          [data-dpr="2"] .activityCenter .act-panel ul li .prize-title {
+            font-size: 22px; }
+          [data-dpr="3"] .activityCenter .act-panel ul li .prize-title {
+            font-size: 33px; }
+      .activityCenter .act-panel ul li.btn-default {
+        font-size: 25px;
+        line-height: 0.8rem;
+        box-sizing: border-box;
+        padding: 0.1rem 0 0.3rem 0;
+        font-weight: bold;
+        background-image: url("../images/activity/btn-default.png"); }
+        [data-dpr="2"] .activityCenter .act-panel ul li.btn-default {
+          font-size: 50px; }
+        [data-dpr="3"] .activityCenter .act-panel ul li.btn-default {
+          font-size: 75px; }
+        .activityCenter .act-panel ul li.btn-default span {
+          display: block; }
+      .activityCenter .act-panel ul li.prize-coupon .prize-img {
+        background-image: url("../images/activity/coupon-bg.png"); }
+        .activityCenter .act-panel ul li.prize-coupon .prize-img .prize-detail-top {
+          top: 0.4rem;
+          left: 0.64rem; }
+        .activityCenter .act-panel ul li.prize-coupon .prize-img .prize-detail-bottom {
+          top: 1.02rem;
+          left: 0.48rem; }
+        .activityCenter .act-panel ul li.prize-coupon .prize-img .prize-detail-right {
+          top: 0.4rem;
+          right: 0.4rem;
+          width: 0.266666rem; }
+      .activityCenter .act-panel ul li.prize-flow .prize-img {
+        background-image: url("../images/activity/flow-bg.png"); }
+        .activityCenter .act-panel ul li.prize-flow .prize-img .prize-detail-top {
+          left: 0.906666rem;
+          top: 0.653333rem; }
+        .activityCenter .act-panel ul li.prize-flow .prize-img .prize-detail-right {
+          top: 0.48rem;
+          left: 0.946666rem; }
+      .activityCenter .act-panel ul li.prize-smile .prize-img {
+        background-image: url("../images/activity/icon_smile.png");
+        background-position: center;
+        background-size: contain; }
+      .activityCenter .act-panel ul li.prize-red-packet .prize-img {
+        background-image: url("../images/activity/red-packet-bg.png"); }
+        .activityCenter .act-panel ul li.prize-red-packet .prize-img .prize-detail-top {
+          top: 0.773333rem;
+          left: 0.84rem; }
+        .activityCenter .act-panel ul li.prize-red-packet .prize-img .prize-detail-right {
+          top: 0.346666rem;
+          left: 0.8rem; }
+      .activityCenter .act-panel ul li.prize-lottery .prize-img {
+        background-image: url("../images/activity/lottery.png");
+        background-position: center;
+        background-size: contain; }
+      .activityCenter .act-panel ul li.prize-integral .prize-img {
+        background-image: url("../images/activity/integral-bg.png"); }
+      .activityCenter .act-panel ul li.prize-integral .prize-detail-top {
+        top: 0.56rem;
+        left: 0.853333rem; }
+      .activityCenter .act-panel ul li.prize-coupon2 .prize-img {
+        background-image: url("../images/activity/coupon2-bg.png"); }
+        .activityCenter .act-panel ul li.prize-coupon2 .prize-img .prize-detail-top {
+          top: 0.4rem;
+          left: 0.773333rem; }
+        .activityCenter .act-panel ul li.prize-coupon2 .prize-img .prize-detail-bottom {
+          top: 1.02rem;
+          left: 0.48rem; }
+        .activityCenter .act-panel ul li.prize-coupon2 .prize-img .prize-detail-right {
+          top: 0.4rem;
+          right: 0.4rem;
+          width: 0.266666rem; }
+      .activityCenter .act-panel ul li.prize-flow .prize-img {
+        background-image: url("../images/activity/flow-bg.png"); }
+      .activityCenter .act-panel ul li.select {
+        background-image: url("../images/activity/btn-select.png"); }
+  .activityCenter .act-news {
+    width: 9.2rem;
+    height: 0.933333rem;
+    border-radius: 0.133333rem;
+    margin: 0.53333rem auto 0.4rem auto;
+    background-color: #8a68f7; }
+    .activityCenter .act-news p {
+      text-align: center;
+      line-height: 0.933333rem;
+      color: #fff;
+      font-size: 14px; }
+      [data-dpr="2"] .activityCenter .act-news p {
+        font-size: 28px; }
+      [data-dpr="3"] .activityCenter .act-news p {
+        font-size: 42px; }
+      .activityCenter .act-news p span {
+        color: #ffe400; }
+    .activityCenter .act-news img {
+      left: 0.8rem;
+      top: 0.2rem;
+      width: 0.666666rem;
+      height: 0.533333rem; }
+  .activityCenter .act-methods {
+    width: 9.2rem;
+    height: 2.666666rem;
+    border-radius: 0.133333rem;
+    margin: 0 auto 0.333333rem auto;
+    background-color: #8a68f7;
+    color: #fff; }
+    .activityCenter .act-methods p {
+      font-size: 20px;
+      line-height: 1;
+      padding: 0.333333rem 0 0.266666rem 0; }
+      [data-dpr="2"] .activityCenter .act-methods p {
+        font-size: 40px; }
+      [data-dpr="3"] .activityCenter .act-methods p {
+        font-size: 60px; }
+    .activityCenter .act-methods ul {
+      box-sizing: border-box;
+      height: calc(100% - 1.133333rem);
+      padding: 0 0.266666rem 0.453333rem 0.266666rem; }
+      .activityCenter .act-methods ul li {
+        box-sizing: border-box;
+        width: calc((100% - 0.4rem)/4);
+        height: 100%;
+        background: url("../images/activity/btn.png") no-repeat;
+        background-size: 100% 100%;
+        margin-right: 0.133333rem;
+        font-size: 17px;
+        line-height: 1;
+        padding: 0.313333rem 0; }
+        [data-dpr="2"] .activityCenter .act-methods ul li {
+          font-size: 34px; }
+        [data-dpr="3"] .activityCenter .act-methods ul li {
+          font-size: 51px; }
+      .activityCenter .act-methods ul > :last-child {
+        margin: 0; }
+
+/*activityMiss*/
+.activityMiss {
+  height: 100vh;
+  background-color: #fff;
+  color: #333; }
+  .activityMiss .kby {
+    margin-top: 1.333333rem; }
+  .activityMiss .notice {
+    margin-top: 1rem;
+    font-size: 14px; }
+    [data-dpr="2"] .activityMiss .notice {
+      font-size: 28px; }
+    [data-dpr="3"] .activityMiss .notice {
+      font-size: 42px; }
+  .activityMiss .btn {
+    width: 5.333333rem;
+    margin: 1.2rem auto 0 auto;
+    font-size: 0; }
+    .activityMiss .btn button {
+      width: 2.4rem;
+      border: none;
+      border-radius: 0.133333rem;
+      outline: none;
+      font-size: 14px;
+      line-height: 0.8rem;
+      color: #fff; }
+      [data-dpr="2"] .activityMiss .btn button {
+        font-size: 28px; }
+      [data-dpr="3"] .activityMiss .btn button {
+        font-size: 42px; }
+    .activityMiss .btn .btn-shop {
+      margin-right: 0.533333rem;
+      background-color: #fe9d01; }
+    .activityMiss .btn .btn-act {
+      background-color: #ff590d; }
+
+/*followShop*/
+.followShop {
+  overflow: hidden;
+  height: 100vh;
+  background: url("../images/activity/gzdp-bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: #333; }
+  .followShop .dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.8rem;
+    border-radius: 0.266666rem;
+    background-color: #fff;
+    font-size: 14px;
+    z-index: 2; }
+    [data-dpr="2"] .followShop .dialog {
+      font-size: 28px; }
+    [data-dpr="3"] .followShop .dialog {
+      font-size: 42px; }
+    .followShop .dialog .btn-cancel {
+      top: -0.8rem;
+      right: 0; }
+      .followShop .dialog .btn-cancel img {
+        height: 0.8rem; }
+    .followShop .dialog.act-ruler {
+      width: 8.8rem; }
+      .followShop .dialog.act-ruler h2 {
+        padding: 0.666666rem 0;
+        line-height: 1; }
+      .followShop .dialog.act-ruler ul {
+        padding: 0.466666rem 0.4rem;
+        text-align: left; }
+    .followShop .dialog.failed h2 {
+      margin: 1rem 0 0.666666rem;
+      padding: 0 0.426666rem; }
+    .followShop .dialog.failed button {
+      display: block;
+      width: 3.466666rem;
+      height: 0.8rem;
+      margin: 0 auto 0.533333rem;
+      border-radius: 0.133333rem;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      color: #fff;
+      background-color: #ff590d; }
+      [data-dpr="2"] .followShop .dialog.failed button {
+        font-size: 28px; }
+      [data-dpr="3"] .followShop .dialog.failed button {
+        font-size: 42px; }
+    .followShop .dialog.prize {
+      width: 6.853333rem;
+      height: 5.253333rem;
+      background: none; }
+      .followShop .dialog.prize .btn-cancel {
+        top: -0.2rem;
+        right: 0.666666rem; }
+      .followShop .dialog.prize header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.573333rem;
+        background: url("../images/activity/zj.png");
+        background-size: 100% 100%;
+        font-size: 18px;
+        z-index: 1; }
+        [data-dpr="2"] .followShop .dialog.prize header {
+          font-size: 36px; }
+        [data-dpr="3"] .followShop .dialog.prize header {
+          font-size: 54px; }
+        .followShop .dialog.prize header h2 {
+          margin-top: 0.293333rem; }
+      .followShop .dialog.prize main {
+        left: 50%;
+        top: 1.24rem;
+        transform: translateX(-50%);
+        width: 5.733333rem;
+        height: 4.2rem;
+        margin: 0 auto;
+        background-color: #fff2c5; }
+        .followShop .dialog.prize main .prize-img {
+          margin-top: 0.466666rem; }
+          .followShop .dialog.prize main .prize-img img {
+            display: block;
+            height: 1.12rem;
+            margin: 0 auto; }
+          .followShop .dialog.prize main .prize-img span {
+            color: #fff; }
+          .followShop .dialog.prize main .prize-img .top {
+            left: 2.733333rem;
+            bottom: -0.08rem;
+            font-size: 19px; }
+            [data-dpr="2"] .followShop .dialog.prize main .prize-img .top {
+              font-size: 38px; }
+            [data-dpr="3"] .followShop .dialog.prize main .prize-img .top {
+              font-size: 57px; }
+            .followShop .dialog.prize main .prize-img .top i {
+              font-style: oblique;
+              font-size: 10px; }
+              [data-dpr="2"] .followShop .dialog.prize main .prize-img .top i {
+                font-size: 20px; }
+              [data-dpr="3"] .followShop .dialog.prize main .prize-img .top i {
+                font-size: 30px; }
+            .followShop .dialog.prize main .prize-img .top em {
+              font-style: normal;
+              font-size: 10px;
+              margin-left: -0.1rem; }
+              [data-dpr="2"] .followShop .dialog.prize main .prize-img .top em {
+                font-size: 20px; }
+              [data-dpr="3"] .followShop .dialog.prize main .prize-img .top em {
+                font-size: 30px; }
+          .followShop .dialog.prize main .prize-img .right {
+            top: 0;
+            left: 2.226666rem;
+            font-size: 10px; }
+            [data-dpr="2"] .followShop .dialog.prize main .prize-img .right {
+              font-size: 20px; }
+            [data-dpr="3"] .followShop .dialog.prize main .prize-img .right {
+              font-size: 30px; }
+        .followShop .dialog.prize main .prize-notice {
+          padding: 0.466666rem 0;
+          font-size: 14px;
+          line-height: 1; }
+          [data-dpr="2"] .followShop .dialog.prize main .prize-notice {
+            font-size: 28px; }
+          [data-dpr="3"] .followShop .dialog.prize main .prize-notice {
+            font-size: 42px; }
+        .followShop .dialog.prize main .btn {
+          padding: 0 0.533333rem 0.4rem; }
+          .followShop .dialog.prize main .btn button {
+            width: calc((100% - 0.533333rem)/2);
+            outline: none;
+            border: none;
+            border-radius: 0.133333rem;
+            color: #fff;
+            font-size: 14px;
+            line-height: 0.8rem; }
+            [data-dpr="2"] .followShop .dialog.prize main .btn button {
+              font-size: 28px; }
+            [data-dpr="3"] .followShop .dialog.prize main .btn button {
+              font-size: 42px; }
+          .followShop .dialog.prize main .btn .go-shop {
+            background-color: #fe9d01; }
+          .followShop .dialog.prize main .btn .use-method {
+            background-color: #ff590d;
+            margin-left: 0.533333rem; }
+  .followShop .shop-name {
+    top: 9.666666rem;
+    left: 3.2rem;
+    font-size: 24px;
+    color: #fff; }
+    [data-dpr="2"] .followShop .shop-name {
+      font-size: 48px; }
+    [data-dpr="3"] .followShop .shop-name {
+      font-size: 72px; }
+  .followShop > button {
+    top: 14.76rem;
+    left: 50%;
+    width: 6.933333rem;
+    border: none;
+    transform: translateX(-50%);
+    background: url("../images/activity/btn-followShop.png") no-repeat;
+    background-size: 100% 100%;
+    color: #333;
+    line-height: 1.386666rem;
+    outline: none;
+    font-size: 24px; }
+    [data-dpr="2"] .followShop > button {
+      font-size: 48px; }
+    [data-dpr="3"] .followShop > button {
+      font-size: 72px; }
+
+/*shoppingCar*/
+.shoppingCar, .storeItem {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #eee;
+  color: #333; }
+  .shoppingCar .dialog, .storeItem .dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.8rem;
+    border-radius: 0.266666rem;
+    background-color: #fff;
+    font-size: 14px;
+    z-index: 2; }
+    [data-dpr="2"] .shoppingCar .dialog, [data-dpr="2"] .storeItem .dialog {
+      font-size: 28px; }
+    [data-dpr="3"] .shoppingCar .dialog, [data-dpr="3"] .storeItem .dialog {
+      font-size: 42px; }
+    .shoppingCar .dialog.act-ruler, .storeItem .dialog.act-ruler {
+      width: 8.8rem; }
+    .shoppingCar .dialog .btn-cancel, .storeItem .dialog .btn-cancel {
+      top: -0.8rem;
+      right: 0; }
+      .shoppingCar .dialog .btn-cancel img, .storeItem .dialog .btn-cancel img {
+        height: 0.8rem; }
+    .shoppingCar .dialog h2, .storeItem .dialog h2 {
+      padding: 0.666666rem 0;
+      line-height: 1; }
+    .shoppingCar .dialog ul, .storeItem .dialog ul {
+      padding: 0.466666rem 0.4rem;
+      text-align: left; }
+    .shoppingCar .dialog > .btn, .storeItem .dialog > .btn {
+      padding: 0 0.533333rem 0.533333rem; }
+      .shoppingCar .dialog > .btn button, .storeItem .dialog > .btn button {
+        width: calc((100% - 0.4rem)/2);
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        color: #fff;
+        font-size: 14px;
+        line-height: 0.8rem; }
+        [data-dpr="2"] .shoppingCar .dialog > .btn button, [data-dpr="2"] .storeItem .dialog > .btn button {
+          font-size: 28px; }
+        [data-dpr="3"] .shoppingCar .dialog > .btn button, [data-dpr="3"] .storeItem .dialog > .btn button {
+          font-size: 42px; }
+      .shoppingCar .dialog > .btn .add-cancel, .shoppingCar .dialog > .btn .go-shop, .storeItem .dialog > .btn .add-cancel, .storeItem .dialog > .btn .go-shop {
+        background-color: #fe9d01; }
+      .shoppingCar .dialog > .btn .add-sure, .shoppingCar .dialog > .btn .use-method, .storeItem .dialog > .btn .add-sure, .storeItem .dialog > .btn .use-method {
+        background-color: #ff590d;
+        margin-left: 0.4rem; }
+  .shoppingCar .banner, .storeItem .banner {
+    height: 3.466666rem;
+    background: url("../images/activity/jgyl-bg.png") no-repeat;
+    background-size: 100% 100%; }
+  .shoppingCar .shop, .storeItem .shop {
+    height: 1.386666rem;
+    padding: 0.4rem 0;
+    background-color: #fff; }
+    .shoppingCar .shop .shop-logo, .storeItem .shop .shop-logo {
+      width: 1.613333rem;
+      padding: 0.053333rem 0 0.053333rem 0.333333rem; }
+      .shoppingCar .shop .shop-logo img, .storeItem .shop .shop-logo img {
+        display: block;
+        width: 1.28rem;
+        height: 1.28rem;
+        background-color: pink; }
+    .shoppingCar .shop .shop-info, .storeItem .shop .shop-info {
+      margin-left: 1.946666rem;
+      line-height: 1; }
+      .shoppingCar .shop .shop-info .shop-name, .storeItem .shop .shop-info .shop-name {
+        font-size: 14px; }
+        [data-dpr="2"] .shoppingCar .shop .shop-info .shop-name, [data-dpr="2"] .storeItem .shop .shop-info .shop-name {
+          font-size: 28px; }
+        [data-dpr="3"] .shoppingCar .shop .shop-info .shop-name, [data-dpr="3"] .storeItem .shop .shop-info .shop-name {
+          font-size: 42px; }
+      .shoppingCar .shop .shop-info .act-detail, .storeItem .shop .shop-info .act-detail {
+        padding: 0.2rem 0;
+        font-size: 12px;
+        color: #ff590d; }
+        [data-dpr="2"] .shoppingCar .shop .shop-info .act-detail, [data-dpr="2"] .storeItem .shop .shop-info .act-detail {
+          font-size: 24px; }
+        [data-dpr="3"] .shoppingCar .shop .shop-info .act-detail, [data-dpr="3"] .storeItem .shop .shop-info .act-detail {
+          font-size: 36px; }
+      .shoppingCar .shop .shop-info .purchase, .storeItem .shop .shop-info .purchase {
+        font-size: 11px; }
+        [data-dpr="2"] .shoppingCar .shop .shop-info .purchase, [data-dpr="2"] .storeItem .shop .shop-info .purchase {
+          font-size: 22px; }
+        [data-dpr="3"] .shoppingCar .shop .shop-info .purchase, [data-dpr="3"] .storeItem .shop .shop-info .purchase {
+          font-size: 33px; }
+        .shoppingCar .shop .shop-info .purchase span, .storeItem .shop .shop-info .purchase span {
+          color: #d93842; }
+  .shoppingCar .goods-list > ul, .storeItem .goods-list > ul {
+    width: 10.16rem;
+    height: calc(100vh - 6.946666rem);
+    overflow: auto; }
+  .shoppingCar .goods-list .goods, .storeItem .goods-list .goods {
+    width: 4.92rem;
+    margin: 0.2rem 0.16rem 0 0;
+    background-color: #fff; }
+    .shoppingCar .goods-list .goods .goods-img, .storeItem .goods-list .goods .goods-img {
+      height: 4.933333rem;
+      background-color: pink; }
+      .shoppingCar .goods-list .goods .goods-img img, .storeItem .goods-list .goods .goods-img img {
+        width: 100%;
+        height: 100%; }
+    .shoppingCar .goods-list .goods .goods-name, .storeItem .goods-list .goods .goods-name {
+      padding: 0.266666rem 0.266666rem 0;
+      text-align: justify;
+      font-size: 13px; }
+      [data-dpr="2"] .shoppingCar .goods-list .goods .goods-name, [data-dpr="2"] .storeItem .goods-list .goods .goods-name {
+        font-size: 26px; }
+      [data-dpr="3"] .shoppingCar .goods-list .goods .goods-name, [data-dpr="3"] .storeItem .goods-list .goods .goods-name {
+        font-size: 39px; }
+    .shoppingCar .goods-list .goods .goods-detail, .storeItem .goods-list .goods .goods-detail {
+      padding: 0.1rem 0.266666rem 0.2rem; }
+      .shoppingCar .goods-list .goods .goods-detail button, .storeItem .goods-list .goods .goods-detail button {
+        width: 1.706666rem;
+        height: 0.666666rem;
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        background-color: #ff590d;
+        font-size: 12px;
+        color: #fff; }
+        [data-dpr="2"] .shoppingCar .goods-list .goods .goods-detail button, [data-dpr="2"] .storeItem .goods-list .goods .goods-detail button {
+          font-size: 24px; }
+        [data-dpr="3"] .shoppingCar .goods-list .goods .goods-detail button, [data-dpr="3"] .storeItem .goods-list .goods .goods-detail button {
+          font-size: 36px; }
+        .shoppingCar .goods-list .goods .goods-detail button.addCar, .storeItem .goods-list .goods .goods-detail button.addCar {
+          background: #999; }
+      .shoppingCar .goods-list .goods .goods-detail .price-current, .storeItem .goods-list .goods .goods-detail .price-current {
+        color: #ff590d;
+        font-size: 16px; }
+        [data-dpr="2"] .shoppingCar .goods-list .goods .goods-detail .price-current, [data-dpr="2"] .storeItem .goods-list .goods .goods-detail .price-current {
+          font-size: 32px; }
+        [data-dpr="3"] .shoppingCar .goods-list .goods .goods-detail .price-current, [data-dpr="3"] .storeItem .goods-list .goods .goods-detail .price-current {
+          font-size: 48px; }
+        .shoppingCar .goods-list .goods .goods-detail .price-current i, .storeItem .goods-list .goods .goods-detail .price-current i {
+          font-style: normal;
+          font-size: 10px;
+          margin-right: -0.1rem; }
+          [data-dpr="2"] .shoppingCar .goods-list .goods .goods-detail .price-current i, [data-dpr="2"] .storeItem .goods-list .goods .goods-detail .price-current i {
+            font-size: 20px; }
+          [data-dpr="3"] .shoppingCar .goods-list .goods .goods-detail .price-current i, [data-dpr="3"] .storeItem .goods-list .goods .goods-detail .price-current i {
+            font-size: 30px; }
+      .shoppingCar .goods-list .goods .goods-detail .price-cost, .storeItem .goods-list .goods .goods-detail .price-cost {
+        color: #999;
+        font-size: 12px;
+        text-decoration: line-through; }
+        [data-dpr="2"] .shoppingCar .goods-list .goods .goods-detail .price-cost, [data-dpr="2"] .storeItem .goods-list .goods .goods-detail .price-cost {
+          font-size: 24px; }
+        [data-dpr="3"] .shoppingCar .goods-list .goods .goods-detail .price-cost, [data-dpr="3"] .storeItem .goods-list .goods .goods-detail .price-cost {
+          font-size: 36px; }
+  .shoppingCar > .btn button, .storeItem > .btn button {
+    width: 50%;
+    height: 1.293333rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px; }
+    [data-dpr="2"] .shoppingCar > .btn button, [data-dpr="2"] .storeItem > .btn button {
+      font-size: 34px; }
+    [data-dpr="3"] .shoppingCar > .btn button, [data-dpr="3"] .storeItem > .btn button {
+      font-size: 51px; }
+  .shoppingCar > .btn .btn-shop, .storeItem > .btn .btn-shop {
+    background-color: #fe9d01; }
+  .shoppingCar > .btn .btn-prize, .storeItem > .btn .btn-prize {
+    background-color: #999; }
+    .shoppingCar > .btn .btn-prize.active, .storeItem > .btn .btn-prize.active {
+      background-color: #ff590d; }
+    .shoppingCar > .btn .btn-prize.prizeGot, .storeItem > .btn .btn-prize.prizeGot {
+      background-color: #999; }
+
+.storeItem .banner {
+  background-image: url("../images/activity/scyl-bg.png"); }
+
+/*signPage*/
+.signPage {
+  overflow: hidden;
+  background-color: #eee;
+  color: #333; }
+  .signPage .dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.8rem;
+    border-radius: 0.266666rem;
+    background-color: #fff;
+    font-size: 14px;
+    z-index: 2; }
+    [data-dpr="2"] .signPage .dialog {
+      font-size: 28px; }
+    [data-dpr="3"] .signPage .dialog {
+      font-size: 42px; }
+    .signPage .dialog.act-ruler {
+      width: 8.8rem; }
+    .signPage .dialog .btn-cancel {
+      top: -0.8rem;
+      right: 0; }
+      .signPage .dialog .btn-cancel img {
+        height: 0.8rem; }
+    .signPage .dialog > h2 {
+      padding: 0.666666rem 0;
+      line-height: 1; }
+    .signPage .dialog ul {
+      padding: 0.466666rem 0.4rem;
+      text-align: left; }
+    .signPage .dialog > .btn {
+      padding: 0 0.533333rem 0.533333rem; }
+      .signPage .dialog > .btn button {
+        width: calc((100% - 0.4rem)/2);
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        color: #fff;
+        font-size: 14px;
+        line-height: 0.8rem; }
+        [data-dpr="2"] .signPage .dialog > .btn button {
+          font-size: 28px; }
+        [data-dpr="3"] .signPage .dialog > .btn button {
+          font-size: 42px; }
+      .signPage .dialog > .btn .add-cancel, .signPage .dialog > .btn .go-shop {
+        background-color: #fe9d01; }
+      .signPage .dialog > .btn .add-sure, .signPage .dialog > .btn .use-method {
+        background-color: #ff590d;
+        margin-left: 0.4rem; }
+    .signPage .dialog.prize {
+      width: 6.853333rem;
+      height: 5.253333rem;
+      background: none; }
+      .signPage .dialog.prize .btn-cancel {
+        top: -0.2rem;
+        right: 0.666666rem; }
+      .signPage .dialog.prize header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.573333rem;
+        background: url("../images/activity/zj.png");
+        background-size: 100% 100%;
+        font-size: 18px;
+        z-index: 1; }
+        [data-dpr="2"] .signPage .dialog.prize header {
+          font-size: 36px; }
+        [data-dpr="3"] .signPage .dialog.prize header {
+          font-size: 54px; }
+        .signPage .dialog.prize header h2 {
+          margin-top: 0.293333rem; }
+      .signPage .dialog.prize main {
+        left: 50%;
+        top: 1.24rem;
+        transform: translateX(-50%);
+        width: 5.733333rem;
+        height: 4.2rem;
+        margin: 0 auto;
+        background-color: #fff2c5; }
+        .signPage .dialog.prize main .prize-img {
+          margin-top: 0.466666rem; }
+          .signPage .dialog.prize main .prize-img img {
+            display: block;
+            height: 1.12rem;
+            margin: 0 auto; }
+          .signPage .dialog.prize main .prize-img span {
+            color: #fff; }
+          .signPage .dialog.prize main .prize-img .top {
+            left: 2.733333rem;
+            bottom: -0.08rem;
+            font-size: 19px; }
+            [data-dpr="2"] .signPage .dialog.prize main .prize-img .top {
+              font-size: 38px; }
+            [data-dpr="3"] .signPage .dialog.prize main .prize-img .top {
+              font-size: 57px; }
+            .signPage .dialog.prize main .prize-img .top i {
+              font-style: oblique;
+              font-size: 10px; }
+              [data-dpr="2"] .signPage .dialog.prize main .prize-img .top i {
+                font-size: 20px; }
+              [data-dpr="3"] .signPage .dialog.prize main .prize-img .top i {
+                font-size: 30px; }
+            .signPage .dialog.prize main .prize-img .top em {
+              font-style: normal;
+              font-size: 10px;
+              margin-left: -0.1rem; }
+              [data-dpr="2"] .signPage .dialog.prize main .prize-img .top em {
+                font-size: 20px; }
+              [data-dpr="3"] .signPage .dialog.prize main .prize-img .top em {
+                font-size: 30px; }
+          .signPage .dialog.prize main .prize-img .right {
+            top: 0;
+            left: 2.226666rem;
+            font-size: 10px; }
+            [data-dpr="2"] .signPage .dialog.prize main .prize-img .right {
+              font-size: 20px; }
+            [data-dpr="3"] .signPage .dialog.prize main .prize-img .right {
+              font-size: 30px; }
+        .signPage .dialog.prize main .prize-notice {
+          padding: 0.466666rem 0;
+          font-size: 14px;
+          line-height: 1; }
+          [data-dpr="2"] .signPage .dialog.prize main .prize-notice {
+            font-size: 28px; }
+          [data-dpr="3"] .signPage .dialog.prize main .prize-notice {
+            font-size: 42px; }
+        .signPage .dialog.prize main .btn {
+          padding: 0 0.533333rem 0.4rem; }
+          .signPage .dialog.prize main .btn button {
+            width: calc((100% - 0.533333rem)/2);
+            outline: none;
+            border: none;
+            border-radius: 0.133333rem;
+            color: #fff;
+            font-size: 14px;
+            line-height: 0.8rem; }
+            [data-dpr="2"] .signPage .dialog.prize main .btn button {
+              font-size: 28px; }
+            [data-dpr="3"] .signPage .dialog.prize main .btn button {
+              font-size: 42px; }
+          .signPage .dialog.prize main .btn .go-shop {
+            background-color: #fe9d01; }
+          .signPage .dialog.prize main .btn .use-method {
+            background-color: #ff590d;
+            margin-left: 0.533333rem; }
+  .signPage .banner {
+    height: 3.466666rem;
+    background: url("../images/activity/qdyl-bg.png") no-repeat;
+    background-size: 100% 100%; }
+    .signPage .banner .btn-sign {
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: #eee;
+      color: #eb6683;
+      line-height: 2rem;
+      font-size: 21px; }
+      [data-dpr="2"] .signPage .banner .btn-sign {
+        font-size: 42px; }
+      [data-dpr="3"] .signPage .banner .btn-sign {
+        font-size: 63px; }
+      .signPage .banner .btn-sign.haveSigned {
+        color: #999; }
+    .signPage .banner .sign-days {
+      bottom: 0.8rem;
+      font-size: 14px;
+      color: #fff; }
+      [data-dpr="2"] .signPage .banner .sign-days {
+        font-size: 28px; }
+      [data-dpr="3"] .signPage .banner .sign-days {
+        font-size: 42px; }
+      .signPage .banner .sign-days span {
+        font-size: 20px; }
+        [data-dpr="2"] .signPage .banner .sign-days span {
+          font-size: 40px; }
+        [data-dpr="3"] .signPage .banner .sign-days span {
+          font-size: 60px; }
+    .signPage .banner .continue-days {
+      left: 0.826666rem; }
+    .signPage .banner .total-days {
+      right: 0.826666rem; }
+  .signPage .sign-ruler {
+    padding: 0.246666rem 0.8rem 0.246666rem;
+    background: #fff; }
+    .signPage .sign-ruler h2 {
+      font-size: 14px;
+      font-weight: bold; }
+      [data-dpr="2"] .signPage .sign-ruler h2 {
+        font-size: 28px; }
+      [data-dpr="3"] .signPage .sign-ruler h2 {
+        font-size: 42px; }
+    .signPage .sign-ruler p {
+      font-size: 13px; }
+      [data-dpr="2"] .signPage .sign-ruler p {
+        font-size: 26px; }
+      [data-dpr="3"] .signPage .sign-ruler p {
+        font-size: 39px; }
+      .signPage .sign-ruler p span {
+        color: #eb6683; }
+  .signPage .date-picker {
+    margin-top: 0.2rem;
+    height: 7.333333rem;
+    background: #fff; }
+  .signPage .goods-list {
+    margin-top: 0.2rem;
+    background-color: #fff; }
+    .signPage .goods-list > .title h2 {
+      line-height: 1.306666rem;
+      font-size: 17px; }
+      [data-dpr="2"] .signPage .goods-list > .title h2 {
+        font-size: 34px; }
+      [data-dpr="3"] .signPage .goods-list > .title h2 {
+        font-size: 51px; }
+    .signPage .goods-list > .title .stick {
+      width: 3.266666rem;
+      height: 2px;
+      background-color: #dadada;
+      top: 50%;
+      transform: translateY(-50%); }
+    .signPage .goods-list > .title .stick-left {
+      left: 0;
+      margin-left: 0.4rem; }
+    .signPage .goods-list > .title .stick-right {
+      right: 0;
+      margin-right: 0.4rem; }
+    .signPage .goods-list > ul {
+      width: 10.16rem; }
+    .signPage .goods-list .goods {
+      width: 4.92rem;
+      margin: 0.2rem 0.16rem 0 0;
+      background-color: #fff; }
+      .signPage .goods-list .goods .goods-img {
+        height: 4.933333rem;
+        background-color: pink; }
+        .signPage .goods-list .goods .goods-img img {
+          width: 100%;
+          height: 100%; }
+      .signPage .goods-list .goods .goods-name {
+        padding: 0.266666rem 0.266666rem 0;
+        text-align: justify;
+        font-size: 13px; }
+        [data-dpr="2"] .signPage .goods-list .goods .goods-name {
+          font-size: 26px; }
+        [data-dpr="3"] .signPage .goods-list .goods .goods-name {
+          font-size: 39px; }
+      .signPage .goods-list .goods .goods-detail {
+        padding: 0.1rem 0.266666rem 0.2rem; }
+        .signPage .goods-list .goods .goods-detail .price-current {
+          color: #ff590d;
+          font-size: 16px; }
+          [data-dpr="2"] .signPage .goods-list .goods .goods-detail .price-current {
+            font-size: 32px; }
+          [data-dpr="3"] .signPage .goods-list .goods .goods-detail .price-current {
+            font-size: 48px; }
+          .signPage .goods-list .goods .goods-detail .price-current i {
+            font-style: normal;
+            font-size: 10px;
+            margin-right: -0.1rem; }
+            [data-dpr="2"] .signPage .goods-list .goods .goods-detail .price-current i {
+              font-size: 20px; }
+            [data-dpr="3"] .signPage .goods-list .goods .goods-detail .price-current i {
+              font-size: 30px; }
+        .signPage .goods-list .goods .goods-detail .price-cost {
+          color: #999;
+          font-size: 12px;
+          text-decoration: line-through; }
+          [data-dpr="2"] .signPage .goods-list .goods .goods-detail .price-cost {
+            font-size: 24px; }
+          [data-dpr="3"] .signPage .goods-list .goods .goods-detail .price-cost {
+            font-size: 36px; }
+  .signPage > .btn button {
+    width: 50%;
+    height: 1.293333rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px; }
+    [data-dpr="2"] .signPage > .btn button {
+      font-size: 34px; }
+    [data-dpr="3"] .signPage > .btn button {
+      font-size: 51px; }
+  .signPage > .btn .btn-shop {
+    background-color: #fe9d01; }
+  .signPage > .btn .btn-prize {
+    background-color: #999; }
+    .signPage > .btn .btn-prize.active {
+      background-color: #ff590d; }
+    .signPage > .btn .btn-prize.prizeGeted {
+      background-color: #999; }
+
+.storeItem .banner {
+  background-image: url("../images/activity/scyl-bg.png"); }
+
+/*# sourceMappingURL=main.css.map */

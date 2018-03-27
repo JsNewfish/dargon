@@ -1,0 +1,126 @@
+.h-block{
+	.h-title{
+		height: 1.333333rem;
+		background-color: #5C4329;
+		color:#fff;
+		line-height: 1.333333rem;
+		position: relative;
+		.h-text{
+			@include font-dpr(20px);
+			@include text-overflow;
+			width: 45%;
+			display: block;
+		}
+		.h-entry{
+			position: absolute;
+			right: 0.4rem;
+			line-height: normal;
+			top: 50%;
+			transform: translateY(-50%);	
+			img{
+				height:0.56rem;
+			}
+			.h-entry-text{
+				display: block;
+				color:#fff;
+			}
+		}
+	}
+	.h-banner{
+		height: 2.6rem;
+		background-image: url(#{$img-path}assets/images/banner-bg@2x.png);
+		overflow: hidden;
+		background-size: 100%;
+		.h-userInfo{
+			height: 1.2rem;
+		    background-color: rgba(128, 128, 128, 0.3);
+		    margin-top: 1.413333rem;
+		  	padding: 0 0.4rem;
+		    .buyerNick{
+		    	margin-top: 0.2rem;
+		    	float: left;
+		    	color:#fff;
+		    	.buyerNick-img{
+		    		background-image: url(#{$img-path}assets/images/cj@2x.png);
+		    		width: 0.933333rem;
+		    		height: 0.933333rem;
+					background-size:100%;
+					display: inline-block;
+					vertical-align: middle;
+					border-radius: 50%; 
+		    	}
+		    	.buyerNick-text{
+		    		@include text-overflow;
+					width: 3rem;
+					display: inline-block;
+		    	}
+		    }
+		    .points{		    	
+		    	float: right;
+		    	color: #000;
+		    	height: 0.8rem;
+		    	background-color: #FCB904;
+		    	border-radius: 0.4rem;
+		    	margin-top: 0.2rem;
+		    	line-height: 0.8rem;
+		    	padding-left: 0.266667rem;
+		    	img{
+		    		vertical-align: middle;
+		    	}
+		    	.points-num{
+		    		padding-right: 0.16rem;
+    				display: inline-block;
+		    	}
+		    }
+		}
+	}
+	.h-btnGroup{
+    	    height: 1.066667rem;
+    background-color: #FF5101;
+    display: flex;
+		.link{
+			width: 50%;
+		    display: block;
+		    border-left: 1px solid #fff;
+		    @include font-dpr(17px);
+		    color: #fff;
+		    text-align: center;
+		    line-height: 1.066667rem;
+		    display: flex;
+		    justify-content:center;
+		    align-items:center;
+		    img{
+		    	vertical-align: middle;
+		    	width: 0.533333rem;
+		    	height: 0.533333rem;
+		    	margin-right:0.066667rem;
+		    }
+		    &:first-child{
+		    	border-left: none;
+		    }
+		}
+    }
+}
+
+.no-items{
+	padding-top: 0.7rem;
+	background-color: #ffffff;
+	.img{
+		width: 3.413333rem;
+	}
+	.remind-text{
+		margin:0.4rem 0;
+	}
+	
+}
+.link-a{
+	color:#fff;
+	&:hover,&:active{
+		color:#fff;
+	}
+}
+a{
+	&:active,&:hover,&:focus{
+		text-decoration: none !important;
+	}
+}

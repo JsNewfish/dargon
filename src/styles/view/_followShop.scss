@@ -1,0 +1,35 @@
+/*followShop*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.followShop {
+  overflow: hidden;
+  height: 100vh;
+  background: url("#{$img-path}assets/images/activity/gzdp-bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: $title-color;
+ 
+  .shop-name {
+    top: 54.347826vh;
+    width: 100%;
+    padding-left: 0.2rem;
+    font-size: 0.64rem;
+    color: $theme-color;
+  }
+  >button {
+    top: 82.983508vh;
+    left: 50%;
+    width: 6.933333rem;
+    border: none;
+    transform: translateX(-50%);
+    background: url("#{$img-path}assets/images/activity/btn-followShop.png") no-repeat;
+    background-size: 100% 100%;
+    color: $title-color;
+    line-height: 1.386666rem;
+    outline: none;
+    font-size: 0.64rem;
+  }
+}

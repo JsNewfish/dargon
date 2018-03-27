@@ -1,0 +1,172 @@
+/*drawPage*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.drawPage {
+  overflow: hidden;
+  height: 100vh;
+  background: url("#{$img-path}assets/images/activity/bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: $title-color;
+  * {
+    box-sizing: content-box;
+  }
+  .to-share {
+    h2 {
+      padding: 0.666666rem 0.426666rem;
+      line-height: 1;
+    }
+    .btn {
+      padding: 0 0.533333rem 0.533333rem;
+      button {
+        width: calc((100% - 0.4rem)/2);
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        color: $theme-color;
+        @include font-dpr(14px);
+        line-height: 0.8rem;
+        background-color: #fe9d01;
+      }   
+    }
+  }
+  .act-chance {
+    width: 4.4rem;
+    height: 3.748125vh;
+    border-radius: 0.333333rem;
+    margin: 26.236881vh auto 2.248875vh auto;
+    background-color: #8a68f7;
+    p {
+      margin-left: 1rem;
+      line-height: 0.666666rem;
+      color: $theme-color;
+      font-size: 0.373333rem;
+      text-align: center;
+      span {
+        vertical-align: top;
+        color: #ffe400;
+        font-size: 0.666667rem;
+      }
+    }
+    img {
+      left: 0.1rem;
+      top: -0.16rem;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+  .act-panel {
+    box-sizing: border-box;
+    width: 9.2rem;
+    height: 40.404797vh;
+    margin: 0 auto;
+    padding: 2.248875vh $gap-rem;
+    background: url("#{$img-path}assets/images/activity/bg2.png") no-repeat;
+    background-size: 100% 100%;
+    ul {
+      height: 100%;
+      li {
+        box-sizing: border-box;
+        width: calc((100% - 0.4rem)/3);
+        height: calc((100% - 2.248875vh)/3);
+        margin: 0.562218vh 0 0 0.1rem;
+        padding-top: 1.686656vh;
+        background: url("#{$img-path}assets/images/activity/bg3.png") no-repeat;
+        background-size: 100% 100%;
+        .wrap {
+          width: 1.866666rem;
+          height: 6.596701vh;
+          margin: 0 auto;
+        }
+        .prize-title {
+          line-height: 2.811094vh;
+          font-size: 0.293333rem;
+          text-align: center;
+        }
+      }
+      li.btn-default {
+        font-size: 0.666667rem;
+        line-height: 4.497751vh;
+        box-sizing: border-box;
+        padding: 0.562218vh 0 2.248875vh 0;
+        font-weight: bold;
+        background-image:  url("#{$img-path}assets/images/activity/btn-default.png");
+        span {
+          display: block;
+        }
+      }
+      li.select {
+        background-image:  url("#{$img-path}assets/images/activity/btn-select.png");
+      }
+    }
+  }
+
+  .act-news {
+    width: 9.2rem;
+    height: 5.247376vh;
+    border-radius: 0.133333rem;
+    margin: 2.9985vh auto 2.248875vh auto;
+    background-color: #8a68f7;
+    overflow: hidden;
+    ul {
+      width: 100%;
+      left: 0;
+      li {
+        text-align: center;
+        line-height: 5.247376vh;
+        height: 5.247376vh;
+        color: $theme-color;
+        font-size: 0.373333rem;
+        span {
+          color: #ffe400;
+        }
+      }
+    }
+    img {
+      left: 0.8rem;
+      top: 0.2rem;
+      width: 0.666666rem;
+      height: 0.533333rem;
+    }
+  }
+
+  .act-methods {
+    width: 9.2rem;
+    height: 14.992503vh;
+    border-radius: 0.133333rem;
+    margin: 0 auto 1.874062vh auto;
+    background-color: #8a68f7;
+    color: $theme-color;
+    p {
+      font-size: 0.533333rem;
+      line-height: 1;
+      padding: 1.874062vh 0 1.499250vh 0;
+    }
+    .wrap {
+      ul {
+        display: inline-block;
+        box-sizing: border-box;
+        height: calc(100% - 1.133333rem);
+        padding: 0 1.499250vh 2.548725vh 1.499250vh;
+        li {
+          box-sizing: border-box;
+          width: 2.066667rem;
+          height: 100%;
+          background: url("#{$img-path}assets/images/activity/btn.png") no-repeat;
+          background-size: 100% 100%;
+          margin-right: 0.133333rem;
+          font-size: 0.453333rem;
+          line-height: 1;
+          padding: 1.761619vh 0;
+        }
+        >:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+*{
+	box-sizing:border-box;
+}
+
+/*
+@font-face
+{
+  font-family: PingFang-SC-Medium;
+  src: url('#{$img-path}assets/fonts/PingFang-Medium.ttf');
+}
+body {
+  font-family: PingFang-SC-Medium!important;
+  background-color: #fff !important;
+}*/
+
+
+body {
+  font-family: "Microsoft Yahei";
+  background-color: #fff !important;
+}
+
+.v-cloak{
+	display: none;
+}

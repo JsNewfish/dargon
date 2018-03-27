@@ -1,0 +1,73 @@
+/*itemDetail*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.itemDetail {
+  background-color: $theme-color;
+  * {
+    box-sizing: content-box;
+  }
+  main {
+    height: calc(100vh - 8.995502vh);
+    overflow: hidden;
+    .wrap {
+      width: 4rem;
+      height: 2.186667rem;
+      margin: 0.266667rem auto;
+      padding: 0.906667rem 0;
+      .prize-goods{
+        img{
+          width: 2.933333rem;
+          height: 2.933333rem;
+        }
+      }
+    }
+    .item-bg {
+      height: $gap-rem;
+      background-color: $bg-color;
+    }
+    .item-detail {
+      padding: $gap-rem;
+      background: $theme-color;
+      .title {
+        color: $title-color;
+        font-weight: bold;
+      }
+      p {
+        color: $content-color;
+        line-height: 2;
+      }
+    }
+
+  }
+  footer {
+    height: 8.995502vh;
+    p {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0.2rem 0 0.2rem 0;
+      line-height: 1.2rem;
+      color: $title-color;
+      font-size: 0.533333rem;
+      box-shadow: 0 0 20px 0 #ccc;
+      span {
+        margin-left: 1.7em;
+        color: #f34d4d;
+      }
+    }
+    img {
+      display: block;
+      width: 2.266666rem;
+      height: 0.933333rem;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .btn-redeem{
+      border-radius: 0.106667rem;
+    }
+  }
+}

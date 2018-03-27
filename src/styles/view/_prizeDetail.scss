@@ -1,0 +1,84 @@
+/*myPoints*/
+$gap-rem: 0.4rem;
+$bg-color: #eeeeee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+.prizeDetail {
+  min-height: 16.45rem;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 1.333rem;
+  background-color: $bg-color;
+  main {
+    padding: $gap-rem;
+    
+    .wrap {
+      width: 9.2rem;
+      height: 4.0rem;
+    }
+    .prize-detail {
+      margin-top: $gap-rem;
+      padding: $gap-rem;
+      background: $theme-color;
+      .title {
+        color: $title-color;
+        font-weight: bold;
+      }
+      p {
+        color: $content-color;
+        line-height: 2;
+      }
+    }
+    .prize-title-bar {
+      padding-top: 0.346666rem;
+      padding-bottom: 0.346666rem;
+    }
+    .store {
+      padding-top: 0.266666rem;
+      padding-bottom: 0.266666rem;
+      .store-logo {
+        height: 1.2rem;
+        margin-right: 0.533333rem;
+      }
+      p {
+        height: 1.2rem;
+        box-sizing: border-box;
+        padding: 0.1rem 0 0.1rem 0;
+        line-height: 1rem;
+        color: $title-color;
+        font-size: 0.453333rem;
+      }
+      .img-right {
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    hr {
+      margin-bottom: -$gap-rem;
+    }
+  }
+  footer {
+    background: rgb(255,70,0);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    p {
+      height: 1.333333rem;
+      box-sizing: border-box;
+      padding: 0.2rem 0 0.2rem 0;
+      line-height: 0.933333rem;
+      color: $theme-color;
+      font-size: 0.533333rem;
+      width: 100%;
+      a{
+        width: 100%;
+        display: block;
+      }
+    }
+    &.losePrize {
+      background: #999;
+    }
+  }
+}

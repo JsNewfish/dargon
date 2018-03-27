@@ -1,0 +1,136 @@
+/*exchangeRecord*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+$desc-color: #999;
+
+.exchangeRecord {
+  color: $title-color;
+  background: #f0f2f5;
+  .data-list {
+    >li {
+      margin-top: 0.2rem;
+      background-color: $theme-color;
+      height: 2.933333rem;
+      padding: 0.373333rem 0.4rem 0 0.4rem;
+
+      .item-hd {
+        height: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .award-wrap {
+          height: 1.6rem;
+          width: 3.146667rem;
+
+          .prize-goods {
+            height: 1.6rem;
+            width: 3.146667rem;
+          }
+
+        }
+
+        .prize-desc {
+          width: 5.666667rem;
+          height: 1.6rem;
+          border-bottom: 1px solid #e0e0e0;
+
+          h2 {
+            font-size: 0.373333rem;
+            margin-top: 0.266667rem;
+            margin-bottom: 0.28rem;
+            line-height: 0.346667rem;
+          }
+
+          p {
+            font-size: 0.32rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: $desc-color;
+          }
+
+        }
+
+      }
+
+      .item-ft {
+        height: 0.986667rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .record-time {
+          color: $desc-color;
+          font-size: 0.293333rem;
+        }
+
+        .record-status {
+          display: flex;
+          align-items: center;
+
+          img {
+            display: block;
+            height: 0.32rem;
+            width: 0.32rem;
+            margin-left: 30px;
+          }
+
+        }
+
+      }
+
+      /* .wrap {
+        width: 2.906667rem;
+        height: 1.6rem;
+        margin: 0.213333rem 0 0 0.4rem;
+      }
+      .prize-desc {
+        margin-left: 0.533333rem;
+        line-height: 1;
+        h2 {
+          font-size: 0.373333rem;
+          margin: 0.533333rem 0 0.266666rem 0;
+        }
+        p {
+          width: 5.666666rem;
+          font-size: 0.32rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: $desc-color;
+          padding-bottom: 24px;
+          border-bottom: 1px solid currentcolor;
+        }
+      }
+      .item-ft{
+        
+      }
+      .record-time {
+        left: $gap-rem;
+        bottom: 0.333333rem;
+        color: $desc-color;
+        font-size: 0.293333rem;
+
+      }
+      .record-status {
+        right: 1rem;
+        bottom: 0.333333rem;
+        font-size: 0.346667rem;
+        img {
+          top: 0.12rem;
+          right: 0.573333rem;
+          position: absolute;
+          vertical-align: middle;
+          width: 0.32rem;
+        }
+      } */
+    }
+
+  }
+
+}

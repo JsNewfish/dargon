@@ -1,0 +1,50 @@
+/*deliveryRecord*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.deliveryRecord {
+  height: 100vh;
+  overflow: auto;
+  color: $title-color;
+  background-color: $bg-color;
+  @include font-dpr(14px);
+  line-height: 0.7rem;
+  .stick {
+    width: 0.05rem;
+    position: relative;
+    top: 0.173333rem;
+    margin-right: 0.2rem;
+    height: 0.373333rem;
+    background-color: #ff590d;
+  }
+  .notice {
+    padding: 0.23rem $gap-rem;
+    background-color: $theme-color;
+
+  }
+  .detail {
+    margin-top: 0.2rem;
+    padding: 0.23rem $gap-rem;
+    background-color: $theme-color;
+    .status>span {
+      color: $content-color;
+    }
+    .deliveryInfo {
+      margin-top: 0.23rem;
+      >span {
+        color: $content-color;
+      }
+      .left {
+        width: 2.16rem;
+        text-align: right;
+        color: $content-color;
+      }
+      .right {
+        padding-left: 0.15rem;
+      }
+    }
+  }
+}

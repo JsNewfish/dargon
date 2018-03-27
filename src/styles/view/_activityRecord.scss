@@ -1,0 +1,32 @@
+/*activityRecord*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$theme-color2: #eb6683;
+$title-color: #333;
+$content-color: #666;
+.activityRecord {
+  background-color: $theme-color;
+  color: $title-color;
+  .list {
+    box-sizing: border-box;
+    height: 1.8rem;
+    padding: $gap-rem;
+    border-bottom: 1px solid $bg-color;
+    .name {
+      line-height: 1;
+      @include font-dpr(14px);
+    }
+    .date {
+      margin-top: 0.3rem;
+      line-height: 1;
+      @include font-dpr(12px);
+      color: #999;
+    }
+    .point {
+      line-height: 0.853333rem;
+      @include font-dpr(15px);
+    }
+  }
+
+}

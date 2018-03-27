@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html style="font-family: PingFang-SC-Medium">
+  <head>
+    <meta charset="utf-8">
+	  <meta content="yes" name="apple-mobile-web-app-capable">
+	  <meta content="yes" name="apple-touch-fullscreen">
+	  <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title></title>
+    <script src="//g.alicdn.com/tmapp/tida/3.2.114/tida.js?appkey=23090346"></script>
+  </head>
+  <body>
+    <div id="app-box"></div>
+    <!-- built files will be auto injected -->
+    <div class="modal-forbid-eve" id="modalForbid" style="display: none;">
+      <div class="mask"></div>
+      <div class="modal">
+        <div class="model-content">
+          请使用手机淘宝打开此页面
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+      var info = Tida.appinfo;
+      if(!info.isTmall&&!info.isTaobao){
+        document.getElementById("modalForbid").style.display="block";
+      }
+  </script>
+</html>

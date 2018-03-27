@@ -1,0 +1,106 @@
+/*myPrize*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+$desc-color: #999;
+
+.myPrize{
+  color: $title-color;
+  background-color: $bg-color;
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    height: 1.066666rem;
+    font-size: 0.373333rem;
+    padding: 0.346666rem 0;
+    background-color: $theme-color;
+    .pull-left {
+      box-sizing: border-box;
+      width: 3.32rem;
+      border-right: 1px solid #999;
+      line-height: 1;
+      >img {
+        vertical-align: middle;
+        width: 0.32rem;
+        height: 0.32rem;
+      }
+      >.nav-list {
+        box-sizing: border-box;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        border-top: 1px solid $desc-color;
+        padding: 0 $gap-rem;
+        text-align: left;
+        font-size: 0.32rem;
+        line-height: 1.173333rem;
+        background-color: $theme-color;
+        li {
+          position: relative;
+          box-sizing: border-box;
+          padding-left: 0.333333rem;
+          border-bottom: 1px solid $desc-color;
+          img {
+            position: absolute;
+            display: none;
+            width: 0.32rem;
+            height: 0.32rem;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &.active>img {
+            display: block;
+          }
+        }
+        li:last-child {
+          border: none;
+        }
+      }
+      .active {
+        color: #ff590d;
+      }
+    }
+    >:last-child {
+      border: none;
+    }
+  }
+  main {
+    margin-top: 1.066666rem;
+    padding: 1px $gap-rem 0 $gap-rem;
+    ul {
+      >li {
+        margin-top: 0.2rem ;
+        background-color: $theme-color;
+        border-radius: 0.2rem;
+        height: 2.026666rem;
+        .wrap {
+          width: 3.333333rem;
+          height: 100%;
+          padding: 0.2rem 0 0.2rem 0.4rem;
+        }
+        .prize-desc {
+          margin-left: 0.533333rem;
+          line-height: 1;
+          h2 {
+            font-size: 0.373333rem;
+            margin: 0.533333rem 0 0.266666rem 0;
+          }
+          p {
+            font-size: 0.32rem;
+            color: $desc-color;
+          }
+        }
+        .prize-lose {
+          ~.prize-desc {
+            color: $desc-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+/*saveRed*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #d13ecf;
+$title-color: #333;
+$content-color: #666;
+.saveRed{
+  	height: 100vh;
+  	color: $title-color;
+  	* {
+  		box-sizing: content-box;
+  	}
+  	.dialog {
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    width: 6.8rem;
+	    border-radius: 0.266666rem;
+	    // background-color: $theme-color;
+    	@include font-dpr(14px);
+    	z-index: 2;
+    	&.act-ruler {
+      		width: 8.831rem;
+    	}
+    	>h2 {
+      		padding: 0.666666rem 0;
+      		line-height: 1;
+    	}
+    	ul {
+      		padding: 0.466666rem 0.4rem;
+      		text-align: left;
+    	}
+  	}
+    .red-start{
+      width: 8.546667rem;
+      height: 7.44rem;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url("#{$img-path}assets/images/activity/saveRed_start1.png");
+      background-size: 100% 100%;
+      .red-close-btn{
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-left: 7.2rem;
+      }
+      .red-start-btn{
+        width: 3.2rem;
+        height: 1.1rem;
+        margin-left: 2.52rem;
+        margin-top: 5rem;
+      }
+    }
+    .red-attention{
+      width: 6.8rem;
+      height:6.226667rem;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url("#{$img-path}assets/images/activity/saveRed_attention.png");
+      background-size: 100% 100%;
+      .attention-close{
+        width: 0.86rem;
+        height: 0.86rem;
+        margin-left: 6rem;
+        margin-top: 0;
+      }
+      .attention-shopName{
+        text-align: center;
+        margin-top:1.26rem;
+        color: #fff;
+      }
+      .attention-img{
+        width: 1.333333rem;
+        height: 1.333333rem;
+        margin-left: 2.75rem;
+        margin-top: 0.18rem;
+        border-radius: 50%;
+        img{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .attention-determine{
+        width: 2.1rem;
+        height: 0.8rem;
+        margin-top: 1.7rem;
+        margin-left: 2.36rem;
+        border-radius: 0.1rem;
+      }
+    }
+    .prizeModel{
+      width: 6.853333rem;
+      top: 30vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      @include font-dpr(14px);
+      z-index: 2;
+      .btn-cancel {
+        top: -0.2rem;
+        right: 0;
+        img {
+          height: 0.8rem;
+        }
+      }
+      header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.573333rem;
+        background: url("#{$img-path}assets/images/activity/zj.png");
+        background-size: 100% 100%;
+        @include font-dpr(18px);
+        z-index: 1;
+        h2 {
+          margin-top: 0.293333rem;
+        }
+      }
+      main {
+        box-sizing: border-box;
+        left: 50%;
+        top: 1.24rem;
+        transform: translateX(-50%);
+        width: 5.733333rem;
+        // height: 4.2rem;
+        margin: 0 auto;
+        padding-top: 0.466666rem;
+        background-color: rgb(255, 242, 197);
+        .prize-red-packet{
+          .prize-detail-right{
+            left: 0.1rem;
+            top: 0;
+          }
+        }
+        .prize-notice {
+          padding: 0.466666rem 0;
+          @include font-dpr(14px);
+          line-height: 1;
+        }
+        .prize-noticeone {
+          padding: 0.466666rem 0;
+          padding-bottom: 0.133333rem;
+          @include font-dpr(14px);
+          line-height: 1;
+        }
+        .prize-subnotice{
+          text-align: left;
+          @include font-dpr(12px);
+          color: #f34d4d;
+          padding: 0 0.533333rem;
+          margin-bottom: 0.466667rem;
+        }
+        .btn {
+          padding: 0 0.533333rem 0.4rem;
+          button {
+            width: calc((100% - 0.533333rem)/2);
+            outline: none;
+            border: none;
+            border-radius: 0.133333rem;
+            color: $theme-color;
+            // @include font-dpr(14px);
+            font-size: 0.373333rem;
+            line-height: 0.8rem;
+          }
+
+          .use-method {
+            background-color: #ff590d;
+            margin-left: 0.533333rem;
+          }
+        }
+      }
+    }
+    .helpModel{
+      width: 6.8rem;
+      height:6.226667rem;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url("#{$img-path}assets/images/activity/saveRed_help.png");
+      background-size: 100% 100%;
+      .attention-close{
+        width: 0.86rem;
+        height: 0.86rem;
+        margin-left: 6rem;
+        margin-top: 0;
+      }
+      .attention-determine{
+        width: 2.4rem;
+        height: 0.8rem;
+        margin-top: 4.2rem;
+        margin-left: 2.2rem;
+        border-radius: 0.1rem;
+      }
+    }
+  	.red_banner{
+  		height: 16.08rem;
+  		img{
+			width: 100%;
+			height: 100%;
+		}
+  		.shop_img{
+  			width: 0.8rem;
+  			height: 0.8rem;
+  			top: 1.253333rem;
+  			left: 2.973333rem;
+  		}
+  		.shop_title{
+  			width: 3.066667rem;
+  			height: 0.8rem;
+  			line-height: 0.8rem;
+  			top: 1.253333rem;
+  			left: 4.0rem;
+  		}
+  		.save_time{
+  			width: 3.626667rem;
+  			height: 1.066667rem;
+  			line-height: 1.066667rem;
+  			text-align: center;
+  			font-size: 0.533333rem;
+  			top: 11.96rem;
+    		left: 3.373333rem;
+    		color: #fff;
+  		}
+  		.save_creator{
+  			width: 9.2rem;
+  			height: 1.693333rem;
+  			top: 13.653333rem;
+  			left: 0.4rem;
+  			.schedule_left{
+  				width: 62%;
+  				float: left;
+  				padding-top: 0.26rem;
+  				padding-left: 0.266667rem;
+  				box-sizing: border-box;
+  				p{
+  					margin-bottom: 0.133333rem;
+  					text-indent: 0.08rem;
+  					color: #fff;
+  				}
+  				.schedule{
+  					width: 5.413333rem;
+  					height: 0.48rem;
+  					background-color: #fff;
+  					border-radius: 0.266667rem;
+            position: relative;
+            overflow: hidden;
+            .progressbar{
+              width: 100%;
+              position: absolute;
+              // left: -5.413333rem;
+              background:#95CA0D;  
+              float:left; 
+              height:100%;  
+              text-align:center;  
+              line-height:150%;
+              border-radius: 0.266667rem;
+            }
+  				}
+  			}
+  			.schedule_right{
+  				width: 38%;
+  				float: left;
+  				img{
+  					margin-top: 0.346667rem;
+  				}
+  				.share_btn{
+  					width: 3.026667rem;
+  					height: 0.933333rem;
+  					line-height: 0.933333rem;
+  					font-size: 0.4rem;
+  					font-weight: bold;
+  					color: #f44090;
+  					text-align: center;
+  					top: 0.4rem;
+    				left: 0.28rem;
+  				}
+  			}
+  		}
+  		.save_partner{
+  			width: 9.2rem;
+  			height: 1.693333rem;
+  			top: 13.653333rem;
+  			left: 0.4rem;
+  		}
+  	}
+  	.goods-list {
+    	overflow-x: hidden;
+     	>.title {
+        	h2 {
+          		line-height: 1.306666rem;
+          		@include font-dpr(17px);
+        	}
+        	.stick {
+           		width: 3.266666rem;
+           		height: 2px;
+           		background-color: rgb(218, 218, 218);
+           		top: 50%;
+           		transform: translateY(-50%);
+        	}
+        	.stick-left {
+           		left: 0;
+           		margin-left: 0.4rem;
+        	}
+        	.stick-right {
+           		right: 0;
+           		margin-right: 0.4rem;
+        	}
+    	}
+    	>ul {
+      		width: 10.16rem;
+    	}
+    	.goods {
+      		width: 4.92rem;
+      		margin: 0.2rem 0.16rem 0 0;
+      		.goods-img {
+        		height: 4.933333rem;
+        		background-color: pink;
+        		img {
+          			width: 100%;
+          			height: 100%;
+        		}
+      		}
+      		.goods-name {
+	        	height: 1.333333rem;
+	        	overflow: hidden;
+	        	padding: 0.266666rem 0.266666rem 0;
+	        	text-align: justify;
+	        	@include font-dpr(13px);
+	      	}
+	      	.goods-detail {
+	        	padding: 0.1rem 0.266666rem 0.2rem;
+	        	.price-current {
+		          	color: #ff590d;
+		          	@include font-dpr(16px);
+		          	i {
+		            	font-style: normal;
+		            	@include font-dpr(10px);
+		            	margin-right: -0.1rem;
+		          	}
+	        	}
+	        	.price-cost {
+	          		color: #999;
+	          		@include font-dpr(12px);
+	          		text-decoration: line-through;
+	        	}
+	      	}
+    	}
+    }
+}

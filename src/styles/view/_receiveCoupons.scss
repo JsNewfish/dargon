@@ -1,0 +1,142 @@
+/*receiveCoupons*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+$desc-color: #999;
+
+.receiveCoupons {
+  overflow: auto;
+  
+  color: $title-color;
+  background-color: $bg-color;
+  height: 100vh;
+  .forceBanner{
+    height: 100vh;
+    position: relative;
+    background-image: url("#{$img-path}assets/images/forceFollow-bg1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .coupon{
+      width: 4.0rem;
+      height: 2.186667rem;
+      position: absolute;
+      top: 7.333333rem;
+      left: 3.053333rem;
+    }  
+    .coupon1{
+      background-image: url("#{$img-path}assets/images/dpyhq.png");
+    }
+    .coupon2{
+      background-image: url("#{$img-path}assets/images/spyhq.png");
+    }
+    .couponBtn{
+      width: 6.426667rem;
+      height: 1.213333rem;
+      position: absolute;
+      top: 15.226667rem;
+      left: 1.866667rem;
+      text-align: center;
+      line-height: 1.213333rem;
+      color: #fff;
+      font-size: 0.453333rem;
+      background-image: url("#{$img-path}assets/images/forceFollow-btn.png");
+    }
+    .couponPrice{
+      width: 225px;
+      height: 80px;
+      position: absolute;
+      top: 568px;
+      left: 238px;
+      text-align: center;
+      line-height: 80px;
+      color: #fff;
+      span{
+        font-size: 40px;
+      }
+    }
+    .couponLimit{
+      width: 225px;
+      height: 40px;
+      position: absolute;
+      top: 667px;
+      left: 238px;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+    }
+    .couponType{
+      width: 40px;
+      position: absolute;
+      top: 559px;
+      left: 487px;
+      text-align: center;
+      line-height: 29px;
+      color: #fff;
+    }
+  }
+  .listBanner{
+    height: 3.466667rem;
+    background-image: url("#{$img-path}assets/images/forceFollow-bg2.png");  
+  }
+  ul {
+    padding: 0 $gap-rem;
+    >li {
+      margin-top: 0.266666rem ;
+      height: 2.506666rem;
+      background-repeat: no-repeat;
+      background-origin: content-box;
+      background-size: 100% 100%;
+      font-size: 0.373333rem;
+      &.coupon-shop {
+        background-image: url("#{$img-path}assets/images/yhq-bg.png");  
+      }
+      &.coupon-item {
+        background-image:  url("#{$img-path}assets/images/yhq-bg2.png");
+      }
+      span {
+        position: absolute;
+        i {
+          font-style: normal;
+          font-size: 0.4rem;
+        }
+        em {
+          font-style: normal;
+          font-size: 0.4rem;
+        }
+      }
+      .prize-detail-top {
+        left: 1.666666rem;
+        top: 0;
+        font-size: 0.853333rem;
+      }
+      .prize-detail-bottom {
+        bottom: 0.066666rem;
+        left: 1.666666rem;
+        font-size: 0.32rem;
+        color: $desc-color;
+      }
+      .prize-detail-middle {
+        left: 1.666666rem;
+        top: 1.16rem;
+      }
+      .prize-detail-left {
+        width: 0.466666rem;
+        line-height: 1.1;
+        top: 0.24rem;
+        left: 0.48rem;
+        color: #ff5a5b;
+      }
+      .prize-detail-right {
+        right: 0.32rem;
+        width: 1.166666rem;
+        top: 0.4rem;
+        font-size: 0.533333rem;
+        color: $theme-color;
+        display: block;
+        height: 1.066667rem
+      }
+    }
+  }
+}

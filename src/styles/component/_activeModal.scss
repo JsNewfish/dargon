@@ -1,0 +1,97 @@
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+.go-shop {
+  background-color: #fe9d01;
+  display: inline-block;
+  width: 2.066667rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.133333rem;
+  color: #fff;
+  font-size: 0.373333rem;
+  margin-bottom: 0.4rem;
+}
+.go-use{
+  background-color: #ff590d;
+  display: inline-block;
+  width: 2.066667rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.133333rem;
+  color: #fff;
+  font-size: 0.373333rem;
+  margin-bottom: 0.4rem;
+}
+.prize-active {
+      width: 6.853333rem;
+      box-sizing: border-box !important;
+      padding-left: 3.41rem;
+      padding-top: 1.25rem;
+      background-color: transparent !important;
+      // height: 5.253333rem;
+      header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.573333rem;
+        background: url("#{$img-path}assets/images/activity/zj.png");
+        background-size: 100% 100%;
+        @include font-dpr(18px);
+        z-index: 1;
+        h2 {
+          margin-top: 0.293333rem;
+        }
+      }
+      main {
+        box-sizing: border-box;
+        left: 50%;
+        top: 1.24rem;
+        transform: translateX(-50%);
+        width: 5.733333rem;
+        // height: 4.2rem;
+        margin: 0 auto;
+        padding-top: 0.466666rem;
+        background-color: rgb(255, 242, 197);
+        .prize-notice {
+          padding: 0.466666rem 0;
+          @include font-dpr(14px);
+          line-height: 1;
+        }
+        .prize-noticeone {
+          padding: 0.466666rem 0;
+          padding-bottom: 0.133333rem;
+          @include font-dpr(14px);
+          line-height: 1;
+        }
+        .prize-subnotice{
+          text-align: left;
+          @include font-dpr(12px);
+          color: #f34d4d;
+          padding: 0 0.533333rem;
+          margin-bottom: 0.466667rem;
+        }
+        .btn {
+          padding: 0 0.533333rem 0.4rem;
+          button {
+            width: calc((100% - 0.533333rem)/2);
+            outline: none;
+            border: none;
+            border-radius: 0.133333rem;
+            color: $theme-color;
+            // @include font-dpr(14px);
+            font-size: 0.373333rem;
+            line-height: 0.8rem;
+          }
+
+          .use-method {
+            background-color: #ff590d;
+            margin-left: 0.533333rem;
+          }
+        }
+      }
+    }

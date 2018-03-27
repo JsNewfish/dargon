@@ -1,0 +1,116 @@
+/*myPoints*/
+
+.myPoints {
+  background-color: $bg-color;
+  color: $title-color;
+  .banner {
+    height: 4rem;
+    background: url("#{$img-path}assets/images/integral-banner-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: $theme-color;
+    .point-num {
+      padding-top: 1.4rem;
+      @include font-dpr(40px);
+      line-height: 1;
+    }
+    .title {
+      line-height: 1;
+      padding-top: 0.666666rem;
+      @include font-dpr(12px);
+      .stick {
+        width: 1.333333rem;
+        border-bottom: 2px dashed $theme-color;
+        bottom: 0.146666rem;
+      }
+      .stick-left {
+        left: 2.586666rem;
+      }
+      .stick-right {
+        right: 2.586666rem;
+      }
+    }
+    .btn-sign {
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      background-color: $bg-color;
+      color: $theme-color2;
+      line-height: 2rem;
+      @include font-dpr(21px);
+      &.haveSigned {
+        color: #999;
+      }
+    }
+    .sign-days {
+      bottom: 0.8rem;
+      @include font-dpr(14px);
+      color: $theme-color;
+      span {
+        @include font-dpr(20px);
+      }
+    }
+    .continue-days {
+      left: 0.826666rem;
+    }
+    .total-days {
+      right: 0.826666rem;
+    }
+  }
+  nav {
+    box-sizing: border-box;
+    height: 1.2rem;
+    @include font-dpr(15px);
+    padding: 0.4rem 0;
+    background-color: $theme-color;
+    .pull-left {
+      box-sizing: border-box;
+      width: 33.333333%;
+      border-right: 1px solid #999;
+      line-height: 1;
+      a{
+        color:#333;
+      }
+    }
+    >:last-child {
+      border: none;
+    }
+  }
+  .point-detail {
+    margin-top: 0.266666rem;
+    background-color: $theme-color;
+    overflow: hidden;
+    .title {
+      border-bottom: 1px solid $bg-color;
+      line-height: 1.2rem;
+      @include font-dpr(15px);
+      font-weight: bold;
+    }
+    .list {
+      box-sizing: border-box;
+      height: 1.666666rem;
+      padding: 0.4rem 0.8rem;
+      border-bottom: 1px solid $bg-color;
+      .name {
+        line-height: 1;
+        @include font-dpr(14px);
+      }
+      .date {
+        margin-top: 0.2rem;
+        line-height: 1;
+        @include font-dpr(12px);
+        color: #999;
+      }
+      .point {
+        line-height: 0.853333rem;
+          color: #f34d4d;
+        @include font-dpr(15px);
+        &.add {
+          color: #12ca1f;
+        }
+      }
+    }
+  }
+}

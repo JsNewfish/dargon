@@ -1,0 +1,38 @@
+
+/* -------------活动中心按钮------------- */
+.btn-act-center {
+  background-color: #fff;
+  left: 0;
+  color: #f34d4d;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+  top: 0.333333rem;
+  @include font-dpr(14px);
+  line-height: 0.7rem;
+  z-index: 1;
+}
+/* -------------活动规则按钮------------- */
+.btn-act-rules {
+  right: 0;
+  padding-right: 0.2rem;
+  color: #fff;
+  top: 0.333333rem;
+  @include font-dpr(14px);
+  line-height: 0.7rem;
+  z-index: 1;
+}
+/* -------------积分规则按钮------------- */
+.btn-point-rules {
+  background-color: #ff9000;
+  right: 0;
+  color: #fff;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0.35rem 0 0 0.35rem;
+  top: 0.333333rem;
+  @include font-dpr(14px);
+  line-height: 0.7rem;
+  z-index: 1;
+}
+
+
+/*-----------奖品图片样式-------------*/

@@ -1,0 +1,254 @@
+/*shoppingCar*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.vote {
+  overflow: hidden;
+  height: 100vh;
+  background-color: $bg-color;
+  color: $title-color;
+  * {
+    box-sizing: content-box;
+  }
+  .dialog {
+    h2 {
+      padding: 0.666666rem 0;
+      line-height: 1;
+    }
+    ul {
+      padding: 0.466666rem 0.4rem;
+      text-align: left;
+    }
+    >.btn {
+      padding: 0 0.533333rem 0.533333rem;
+      button {
+        width: calc((100% - 0.4rem)/2);
+        outline: none;
+        border: none;
+        border-radius: 0.133333rem;
+        color: $theme-color;
+        @include font-dpr(14px);
+        line-height: 0.8rem;
+      }
+      .add-cancel,.go-shop {
+        background-color: #fe9d01;
+      }
+      .add-sure,.use-method {
+        background-color: #ff590d;
+        margin-left: 0.4rem;
+      }
+    }
+  }
+  main {
+    width: 10.0rem;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+  }
+  .banner {
+    width: 10.0rem;
+    height: 3.466666rem;
+    background: url("#{$img-path}assets/images/vote/vote-bg.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .shop {
+    height: 1.386666rem;
+    padding: $gap-rem 0;
+    background-color: $theme-color;
+    .shop-logo {
+      width: 1.613333rem;
+      padding: 0.053333rem 0 0.053333rem 0.333333rem;
+      img {
+        display: block;
+        width: 1.28rem;
+        height: 1.28rem;
+        background: url("#{$img-path}assets/images/activity/shop-avatar.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .shop-info {
+      margin-left: 1.946666rem;
+      line-height: 1;
+      .shop-name {
+        font-size: 0.373333rem;
+      }
+      .act-detail {
+        padding: 0.2rem 0;
+        font-size: 0.32rem;
+        color: $content-color;
+        span {
+          color: #ff590d;
+        }  
+      }
+      .purchase {
+        font-size: 0.293333rem;
+        span {
+          color: #d93842;
+        }
+      }
+    }
+
+  }
+  .goods-list {
+    height: calc(100vh - 4rem);
+    padding: 0 $gap-rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .title {
+      @include font-dpr(14px);
+      padding-top: 0.2rem;
+    }
+    >ul {
+      width: 10.16rem;
+      
+    } 
+    .goods {
+      width: 4.48rem;
+      margin: 0.2rem 0.24rem 0 0;
+      background-color: $theme-color;
+      .goods-img {
+        height: 5rem;
+        background-color: pink;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .vote-button {
+        height: 1.5rem;
+        .button {
+          box-sizing: border-box;
+          width: 0.533333rem;
+          height: 0.533333rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+          border: 2px solid #ccc;
+          background: #eee;
+        }
+        .pick {
+          display: none;
+          width: 0.24rem;
+          height: 0.24rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+          background: #999;
+          &.active {
+            display: block;
+          }
+        }
+      }
+
+    }
+
+  }
+  >.btn {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    button {
+      width: 50%;
+      height: 1.293333rem;
+      outline: none;
+      border: none;
+      color: $theme-color;
+      @include font-dpr(17px);
+    }
+    .btn-shop {
+      background-color: #fe9d01;
+    }
+    .btn-prize {
+      width: 100%;
+      background-color: #999;
+      &.active {
+        background-color: #ff590d;
+      }
+      &.prizeGot {
+        background-color: #999;
+      }
+    }
+  }
+  .vote-text {
+    box-sizing: border-box;
+    height: calc(100vh - 4.76rem);
+    overflow-y: auto;
+    color: #fff;
+    padding: 0.533333rem 0;
+    background: #fff;
+    .shop {
+      width: 9.2rem;
+      height: 2.826667rem;
+      margin: 0 auto;
+      padding: 0;
+      background: #fff url("#{$img-path}assets/images/vote/shop-bg.png") no-repeat;
+      background-size: 100% 100%;
+      .wrap {
+        margin-top: 1.146667rem;
+        .act-detail,.purchase {
+          color: #fff;
+          span {
+            color: #0afafa;
+          }
+        }
+      }
+    }
+    .text-list {
+      box-sizing: border-box;
+      width: 8.933333rem;
+      margin: 0 auto;
+      border: 1px solid #000;
+      border-radius: 0 0 5px 5px;
+      padding: 0 0.333333rem;
+      background: #ff9ee9;
+      .title {
+        margin: 0.4rem 0 0.533333rem;
+        @include font-dpr(14px);
+        
+      }
+      li {
+        margin-bottom: 0.533333rem;
+        .button {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 0.533333rem;
+          height: 0.533333rem;
+          border-radius: 50%;
+          border: 0.04rem solid #ccc;
+          background: #fff;
+          vertical-align: middle;
+        }
+        .pick {
+          display: none;
+          width: 0.24rem;
+          height: 0.24rem;
+          top: 0.266667rem;
+          left: 0.146667rem;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background: #999;
+          &.active {
+            display: block;
+          }
+        }
+        span.text {
+        vertical-align: middle;
+        margin-left: 0.133333rem;
+        }
+      }
+      
+    }
+  }
+
+}
+.storeItem {
+  .banner {
+    background-image: url("#{$img-path}assets/images/activity/scyl-bg.png");
+  }
+}

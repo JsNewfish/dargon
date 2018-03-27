@@ -1,0 +1,167 @@
+.dg-dialog {
+	.weui-dialog {
+		max-width: 6.8rem;
+    width: 6.8rem;
+		padding: 1.066667rem 0.6rem 0.4rem 0.6rem;
+		border-radius: 0.2rem;
+		box-sizing:border-box;
+		overflow: visible;
+		.dialog-content {
+			color:#333;
+			font-size: 0.373333rem;
+			margin-bottom: 0.8rem;
+		}
+
+		.dialog-btn {
+			display: inline-block;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			padding-left: 0.6rem;
+			padding-right: 0.6rem;
+			border-radius: 0.133333rem;
+			background: #ff590d;
+			border: none;
+			color: #fff;
+			font-size: 0.373333rem;
+			&:hover, &:active {
+				text-direction: none;
+			}
+		}
+
+		.dialog-btn-close {
+			display: block;
+			position: absolute;
+			top:-1.186667rem;
+			right:0;
+			height: 1.186667rem;
+			width: 0.8rem;
+			background:url(#{$img-path}assets/images/btn-close.png) no-repeat;
+      background-size:cover;
+		}
+	}
+
+}
+
+.dg-confirm{
+	.weui-dialog{
+    width: 6.8rem;
+		max-width: 6.8rem;
+		border-radius: 0.2rem;
+		box-sizing:border-box;
+		.weui-dialog__bd{
+			padding-top:1.066667rem;
+			font-size:0.373333rem;
+			padding-bottom:0.666667rem;
+		}
+		.weui-dialog__ft{
+			padding-left:0.506667rem;
+			padding-right: 0.506667rem;
+			padding-bottom:0.333333rem;
+      padding-top:0.333333rem;
+			justify-content: space-between;
+      &:after{
+        border-top:none;
+      }
+			.weui-dialog__btn{
+				height: 0.8rem;
+				line-height: 0.8rem;
+				font-size: 0.333333rem;
+				width: 2.666667rem;
+				color:#fff;
+				flex:none;
+				border-radius:0.133333rem;
+			}
+			.weui-dialog__btn_default{
+				background:#fe9d01; 
+			}
+			.weui-dialog__btn_primary{
+				background:#ff590d; 
+			}
+		}
+
+	}	
+}
+
+
+/* -------------通用遮罩------------- */
+.cover {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(50, 50, 50, 0.95);
+  z-index: 1;
+}
+/* -------------通用toast------------- */
+.toast {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 5.253333rem;
+  height: 1.066666rem;
+  border-radius: 0.053333rem;
+  color: #fff;
+  line-height: 1.066666rem;
+  font-size: 0.373333rem;
+  background-color: #808080;
+  z-index: 3;
+}
+/* -------------dialog样式------------- */
+.dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.8rem;
+  border-radius: 0.266666rem;
+  background-color: #fff;
+  @include font-dpr(14px);
+  z-index: 2;
+  .btn-cancel {
+    top: -0.8rem;
+    right: 0;
+    img {
+      height: 0.8rem;
+    }
+  }
+  
+  &.act-ruler {
+      width: 8.8rem;
+      h2 {
+        padding: 0.666666rem 0;
+        line-height: 1;
+      }
+      ul {
+        padding: 0.466666rem 0.4rem;
+        text-align: left;
+      }
+    }
+  &.failed {
+    h2 {
+      margin: 1rem 0 0.666666rem;
+      padding: 0 0.426666rem;
+
+    }
+    button {
+      display: block;
+      width: 3.466666rem;
+      height: 0.8rem;
+      margin: 0 auto 0.533333rem;
+      border-radius: 0.133333rem;
+      outline: none;
+      border: none;
+      @include font-dpr(14px);
+      color: $theme-color;
+      background-color: #ff590d;
+    }
+  }
+
+  &.prize-active {
+    background: transparent;
+
+    .btn-cancel {
+      top: -0.2rem;
+      right: 0.586666rem;
+      z-index: 2;
+    }
+  }
+}

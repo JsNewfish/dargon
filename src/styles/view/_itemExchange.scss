@@ -1,0 +1,112 @@
+/*itemExchange*/
+$gap-rem: 0.4rem;
+$bg-color: #eee;
+$theme-color: #fff;
+$title-color: #333;
+$content-color: #666;
+
+.page-itemExchange {
+  height: 100vh;
+  overflow: auto;
+  color: $title-color;
+  background-color: $bg-color;
+  @include font-dpr(14px);
+  line-height: 1.186666rem;
+
+  .deliveryInfo {
+    li {
+      padding: 0 $gap-rem;
+      border-bottom: 1px solid $bg-color;
+      background-color: $theme-color;
+
+      span {
+        display: inline-block;
+        width: 2.0rem;
+      }
+
+      input {
+        border: none;
+        background-color: transparent;
+      }
+
+      textarea {
+        width: 100%;
+        height: 2rem;
+        border: none;
+        resize: none;
+        @include font-dpr(14px);
+        line-height: 0.7rem;
+        background-color: transparent;
+
+        &::-webkit-input-placeholder {
+          color: #ddd;
+        }
+      }
+
+      .select {
+        padding-right: 0.4rem;
+        color: rgb(153, 153, 153);
+
+        img {
+          width: 0.32rem;
+          right: 0;
+          top: 0.466666rem;
+        }
+      }
+    }
+
+    li:last-child {
+      border: none;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 0.533333rem;
+      border: none;
+      line-height: 1.16rem;
+      @include font-dpr(20px);
+      color: $theme-color;
+      background: #ff4600;
+    }
+
+    .address-control {
+      .address-control {
+        padding: 0;
+      }
+
+      .weui-cell_access {
+        padding: 0;
+      }
+
+      .vux-popup-picker-value {
+        width: auto;
+      }
+
+      .weui-cell__ft {
+        padding-right: 0.266667rem;
+
+        &::after {
+          margin-top: -0.093333rem;
+          width: 0.173333rem;
+          height: 0.173333rem;
+        }
+
+      }
+
+    }
+
+  }
+
+  .confirm-success {
+    .weui-dialog__ft {
+      justify-content: center;
+    }
+
+    .weui-dialog__btn.weui-dialog__btn_default {
+      display: none;
+    }
+
+  }
+
+}
